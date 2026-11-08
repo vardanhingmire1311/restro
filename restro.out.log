@@ -431,3 +431,5 @@ Restro listening on http://127.0.0.1:3847
  GET / 200 in 297ms
  ✓ Compiled in 759ms (408 modules)
  GET / 200 in 95ms
+ ✓ Compiled in 2.2s (408 modules)
+ GET / 200 in 154ms

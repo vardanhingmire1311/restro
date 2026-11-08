@@ -277,6 +277,9 @@ Tests use `restro_test` (override with `TEST_DATABASE_URL`) and cover the owner 
 
 ## Free hosting
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vardanhingmire1311/restro)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vardanhingmire1311/restro)
+
 Checked against public docs and write-ups in November 2026. Free tiers move. Read the pricing page on the day you deploy.
 
 **Use this pair if you want the live kitchen to work:**
