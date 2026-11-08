@@ -79,7 +79,7 @@ function AccountForm() {
         ) : null}
         {devCode ? <p className="rounded-xl bg-black/40 px-3 py-2 text-sm">Dev code {devCode}. Production hides this and uses Fast2SMS or Twilio.</p> : null}
         <button type="submit" className="w-full rounded-full bg-[#ff9933] py-3 font-semibold text-[#1a1208]">{sent ? "Verify and continue" : "Send code"}</button>
-        {google ? <a href="/api/customer/google/start" className="block rounded-full border border-white/15 py-3 text-center">Continue with Google</a> : <p className="text-xs text-[#b7b1a8]">Google Sign-In appears here after GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET are set.</p>}
+        {google ? <Link href="/api/customer/google/start" prefetch={false} className="block rounded-full border border-white/15 py-3 text-center">Continue with Google</Link> : <p className="text-xs text-[#b7b1a8]">Google Sign-In appears here after GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET are set.</p>}
       </form>
     </main>
   );
