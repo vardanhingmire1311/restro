@@ -1,0 +1,178 @@
+{
+  "info": {
+    "name": "Restro",
+    "description": "Staff login, waiter order, chef status, billing settlement, split bill, Swiggy webhook, and suspend. Set baseUrl if the app is not on port 3847. Run Public menu first so dish ids are stored.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://127.0.0.1:3847" },
+    { "key": "adminToken", "value": "" },
+    { "key": "waiterToken", "value": "" },
+    { "key": "chefToken", "value": "" },
+    { "key": "billingToken", "value": "" },
+    { "key": "orderId", "value": "" },
+    { "key": "itemId", "value": "" },
+    { "key": "shareId", "value": "" },
+    { "key": "sandwichId", "value": "" },
+    { "key": "waiterId", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Public menu",
+      "event": [{
+        "listen": "test",
+        "script": { "exec": [
+          "const cats = pm.response.json().data.categories;",
+          "for (const category of cats) {",
+          "  for (const item of category.items) {",
+          "    if (item.name === 'Vegetarian Sandwich') pm.collectionVariables.set('sandwichId', String(item.id));",
+          "  }",
+          "}"
+        ] }
+      }],
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/public/menu" }
+    },
+    {
+      "name": "Admin login",
+      "event": [{ "listen": "test", "script": { "exec": ["const body = pm.response.json(); if (body.data && body.data.token) pm.collectionVariables.set('adminToken', body.data.token);"] } }],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"email\": \"admin@restro.com\",\n  \"password\": \"admin123\"\n}" },
+        "url": "{{baseUrl}}/api/auth/login"
+      }
+    },
+    {
+      "name": "Waiter login",
+      "event": [{ "listen": "test", "script": { "exec": ["const body = pm.response.json(); if (body.data && body.data.token) pm.collectionVariables.set('waiterToken', body.data.token);"] } }],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"email\": \"waiter@restro.com\",\n  \"password\": \"waiter123\"\n}" },
+        "url": "{{baseUrl}}/api/auth/login"
+      }
+    },
+    {
+      "name": "Chef login",
+      "event": [{ "listen": "test", "script": { "exec": ["const body = pm.response.json(); if (body.data && body.data.token) pm.collectionVariables.set('chefToken', body.data.token);"] } }],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"email\": \"chef@restro.com\",\n  \"password\": \"chef123\"\n}" },
+        "url": "{{baseUrl}}/api/auth/login"
+      }
+    },
+    {
+      "name": "Billing login",
+      "event": [{ "listen": "test", "script": { "exec": ["const body = pm.response.json(); if (body.data && body.data.token) pm.collectionVariables.set('billingToken', body.data.token);"] } }],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"email\": \"billing@restro.com\",\n  \"password\": \"billing123\"\n}" },
+        "url": "{{baseUrl}}/api/auth/login"
+      }
+    },
+    {
+      "name": "Waiter order",
+      "event": [{ "listen": "test", "script": { "exec": [
+        "const body = pm.response.json();",
+        "if (body.data) {",
+        "  pm.collectionVariables.set('orderId', body.data.orderId);",
+        "  pm.collectionVariables.set('itemId', body.data.bill.items[0].id);",
+        "  pm.collectionVariables.set('shareId', body.data.bill.shares[0].id);",
+        "}"
+      ] } }],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{waiterToken}}" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"tableNo\": 4,\n  \"chefNote\": \"less spicy\",\n  \"items\": [{ \"menuItemId\": {{sandwichId}}, \"qty\": 2, \"note\": \"no onion\" }]\n}" },
+        "url": "{{baseUrl}}/api/orders"
+      }
+    },
+    {
+      "name": "Chef status update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{chefToken}}" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"status\": \"PREPARING\"\n}" },
+        "url": "{{baseUrl}}/api/order-items/{{itemId}}/status"
+      }
+    },
+    {
+      "name": "Open cash drawer",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{billingToken}}" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"float\": 2000\n}" },
+        "url": "{{baseUrl}}/api/billing/drawer/open"
+      }
+    },
+    {
+      "name": "Billing settlement",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{billingToken}}" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"tendered\": 500\n}" },
+        "url": "{{baseUrl}}/api/billing/shares/{{shareId}}/cash"
+      }
+    },
+    {
+      "name": "Split bill",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{billingToken}}" }
+        ],
+        "body": { "mode": "raw", "raw": "{\n  \"parts\": [\n    { \"label\": \"Card 1\", \"amount\": 63 },\n    { \"label\": \"Card 2\", \"amount\": 63 }\n  ]\n}" },
+        "url": "{{baseUrl}}/api/billing/orders/{{orderId}}/split"
+      }
+    },
+    {
+      "name": "Aggregator webhook",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"delivery_id\": \"SWG-8821\",\n  \"chef_note\": \"hand to rider\",\n  \"items\": [{ \"menuItemId\": {{sandwichId}}, \"qty\": 1, \"note\": \"no onion\" }]\n}" },
+        "url": "{{baseUrl}}/api/webhooks/swiggy"
+      }
+    },
+    {
+      "name": "List staff",
+      "event": [{ "listen": "test", "script": { "exec": [
+        "const people = pm.response.json().data || [];",
+        "const waiter = people.find((person) => person.email === 'waiter@restro.com');",
+        "if (waiter) pm.collectionVariables.set('waiterId', waiter.id);"
+      ] } }],
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Authorization", "value": "Bearer {{adminToken}}" }],
+        "url": "{{baseUrl}}/api/admin/staff"
+      }
+    },
+    {
+      "name": "Suspend user",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{adminToken}}" }
+        ],
+        "body": { "mode": "raw", "raw": "{}" },
+        "url": "{{baseUrl}}/api/admin/staff/{{waiterId}}/suspend"
+      }
+    }
+  ]
+}

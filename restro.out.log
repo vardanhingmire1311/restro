@@ -1,0 +1,433 @@
+menu already seeded
+Restro listening on http://127.0.0.1:3847
+ ○ Compiling / ...
+ ✓ Compiled / in 19.4s (665 modules)
+ GET / 200 in 21876ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.1s (652 modules)
+ GET /login 404 in 3851ms
+ ○ Compiling /waiter ...
+ ✓ Compiled /waiter in 5.8s (872 modules)
+ GET /waiter 200 in 6921ms
+ ○ Compiling /kitchen ...
+ ✓ Compiled /kitchen in 1161ms (879 modules)
+ GET /kitchen 200 in 2000ms
+ ○ Compiling /billing ...
+ ✓ Compiled /billing in 1650ms (886 modules)
+ GET /billing 200 in 2187ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 1983ms (893 modules)
+ GET /admin 200 in 2803ms
+ GET / 200 in 225ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1290ms (413 modules)
+ GET /favicon.ico 200 in 1652ms
+ ○ Compiling /staff ...
+ ✓ Compiled /staff in 733ms (762 modules)
+ GET /staff 200 in 986ms
+ ○ Compiling /waiter ...
+ ✓ Compiled /waiter in 567ms (553 modules)
+ GET /waiter 200 in 939ms
+ GET /waiter 200 in 86ms
+ GET /waiter 200 in 79ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 895ms (541 modules)
+ GET /admin 200 in 1759ms
+ GET /waiter 200 in 183ms
+ ○ Compiling /billing ...
+ ✓ Compiled /billing in 1951ms (546 modules)
+ GET /billing 200 in 2861ms
+ GET /billing 200 in 303ms
+ GET /billing 200 in 306ms
+ ○ Compiling /kitchen ...
+ ✓ Compiled /kitchen in 1530ms (551 modules)
+ GET /billing 200 in 3324ms
+ GET /kitchen 200 in 3525ms
+ GET /kitchen 200 in 219ms
+ GET /kitchen 200 in 217ms
+ GET /kitchen 200 in 167ms
+ GET /billing 200 in 103ms
+ GET /admin 200 in 177ms
+ GET /kitchen 200 in 250ms
+ GET /billing 200 in 79ms
+ ○ Compiling /pay/sandbox/[id] ...
+ ✓ Compiled /pay/sandbox/[id] in 2.8s (897 modules)
+ GET /pay/sandbox/86687d5b-ab25-420f-bea2-8ead71401d9b 200 in 7450ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 2.2s (568 modules)
+ GET /favicon.ico 200 in 2723ms
+ GET /billing 200 in 1674ms
+ GET /admin 200 in 287ms
+ GET /staff 200 in 673ms
+ GET /billing 200 in 67ms
+ GET /staff 200 in 167ms
+ GET /kitchen 200 in 92ms
+ ○ Compiling / ...
+ ✓ Compiled / in 745ms (491 modules)
+ GET / 200 in 1306ms
+ GET /staff 200 in 75ms
+ ○ Compiling /book ...
+ ✓ Compiled /book in 1043ms (844 modules)
+ GET /book 200 in 1289ms
+ ○ Compiling /account ...
+ ✓ Compiled /account in 715ms (851 modules)
+ GET /account?next=%2Fbook 200 in 850ms
+[otp] mobile 9579699204 code 299459
+menu already seeded
+Restro listening on http://127.0.0.1:3847
+ ○ Compiling / ...
+ ✓ Compiled / in 8.9s (754 modules)
+ GET / 200 in 11334ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 2.9s (762 modules)
+ GET /favicon.ico 200 in 3478ms
+ ✓ Compiled in 1264ms (293 modules)
+ GET / 200 in 1278ms
+ GET / 200 in 80ms
+ ✓ Compiled in 426ms (293 modules)
+ GET / 200 in 631ms
+ GET / 200 in 910ms
+ GET /favicon.ico 200 in 28ms
+ ✓ Compiled in 263ms (293 modules)
+ GET / 200 in 359ms
+ ○ Compiling /staff ...
+ ✓ Compiled /staff in 1385ms (759 modules)
+ GET /staff 200 in 2131ms
+ GET /favicon.ico 200 in 71ms
+ ✓ Compiled in 411ms (297 modules)
+ GET /staff 200 in 460ms
+ GET /favicon.ico 200 in 45ms
+ ○ Compiling /waiter ...
+ ✓ Compiled /waiter in 2.8s (1004 modules)
+ GET /waiter 200 in 3225ms
+ GET /favicon.ico 200 in 147ms
+ GET /waiter 200 in 1011ms
+ GET /favicon.ico 200 in 25ms
+ ✓ Compiled in 348ms (402 modules)
+ GET /waiter 200 in 59ms
+ ✓ Compiled in 477ms (402 modules)
+ GET /staff 200 in 495ms
+ ✓ Compiled in 242ms (402 modules)
+ GET /favicon.ico 200 in 18ms
+ GET /staff? 200 in 146ms
+ GET /favicon.ico 200 in 26ms
+ GET /favicon.ico 200 in 25ms
+ GET / 200 in 245ms
+ GET /favicon.ico 200 in 22ms
+ GET /staff 200 in 112ms
+ GET /favicon.ico 200 in 22ms
+ ○ Compiling /kitchen ...
+ ✓ Compiled /kitchen in 1058ms (946 modules)
+ GET /kitchen 200 in 1422ms
+ GET /favicon.ico 200 in 64ms
+ ✓ Compiled in 405ms (404 modules)
+ GET /staff 200 in 130ms
+ ✓ Compiled in 1216ms (960 modules)
+ GET /staff 200 in 244ms
+ ✓ Compiled in 620ms (404 modules)
+ GET /staff 200 in 87ms
+menu already seeded
+Restro listening on http://127.0.0.1:3847
+ ○ Compiling / ...
+ ✓ Compiled / in 8.6s (754 modules)
+ GET / 200 in 10405ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 2.6s (762 modules)
+ GET /favicon.ico 200 in 3259ms
+ ✓ Compiled in 773ms (293 modules)
+ GET / 200 in 1465ms
+ GET / 200 in 162ms
+ GET /favicon.ico 200 in 60ms
+ ✓ Compiled in 483ms (293 modules)
+ GET / 200 in 549ms
+ GET / 200 in 868ms
+ GET /favicon.ico 200 in 33ms
+ ✓ Compiled in 578ms (293 modules)
+ ○ Compiling /staff ...
+ GET / 200 in 551ms
+ ✓ Compiled /staff in 2.1s (759 modules)
+ GET /staff 200 in 4235ms
+ GET /favicon.ico 200 in 126ms
+ ✓ Compiled in 861ms (297 modules)
+ GET /staff 200 in 545ms
+ GET /favicon.ico 200 in 34ms
+ ○ Compiling /waiter ...
+ ✓ Compiled /waiter in 3.5s (1004 modules)
+ GET /waiter 200 in 4099ms
+ GET /favicon.ico 200 in 182ms
+ GET /waiter 200 in 969ms
+ GET /favicon.ico 200 in 26ms
+ ✓ Compiled in 498ms (402 modules)
+ GET /waiter 200 in 129ms
+ ✓ Compiled in 563ms (402 modules)
+ GET /staff 200 in 630ms
+ ✓ Compiled in 667ms (402 modules)
+ GET /favicon.ico 200 in 22ms
+ ✓ Compiled /kitchen in 501ms (1011 modules)
+ GET /kitchen 200 in 764ms
+ GET /favicon.ico 200 in 125ms
+ GET /kitchen 200 in 657ms
+ GET /favicon.ico 200 in 24ms
+ ✓ Compiled in 458ms (404 modules)
+ GET /staff 200 in 274ms
+ GET /favicon.ico 200 in 22ms
+ ✓ Compiled /billing in 496ms (1018 modules)
+ GET /billing 200 in 619ms
+ GET /favicon.ico 200 in 50ms
+ GET /billing 200 in 478ms
+ GET /favicon.ico 200 in 29ms
+ ✓ Compiled in 616ms (406 modules)
+ GET /staff 200 in 404ms
+ GET /favicon.ico 200 in 26ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 644ms (1025 modules)
+ GET /admin 200 in 784ms
+ GET /favicon.ico 200 in 45ms
+ GET /admin 200 in 490ms
+ GET /favicon.ico 200 in 33ms
+ ○ Compiling /account ...
+ ✓ Compiled /account in 2.1s (1039 modules)
+ GET /favicon.ico 200 in 397ms
+ GET /book 200 in 2593ms
+ GET /admin 200 in 468ms
+ GET /account 200 in 247ms
+ ✓ Compiled in 465ms (412 modules)
+ GET /account?next=%2Fbook 200 in 95ms
+ GET / 200 in 62ms
+ GET /staff 200 in 70ms
+ GET /waiter 200 in 59ms
+ GET / 200 in 450ms
+ GET /staff 200 in 722ms
+ GET /favicon.ico 200 in 29ms
+ ✓ Compiled in 558ms (412 modules)
+ GET / 200 in 1094ms
+ GET /staff 200 in 1106ms
+ ✓ Compiled in 1327ms (412 modules)
+ GET /favicon.ico 200 in 139ms
+ GET /favicon.ico 200 in 259ms
+ ✓ Compiled in 704ms (412 modules)
+ GET / 200 in 711ms
+ GET / 200 in 591ms
+ GET / 200 in 867ms
+ ✓ Compiled in 1010ms (412 modules)
+ GET /favicon.ico 200 in 29ms
+ ✓ Compiled in 313ms (412 modules)
+ GET / 200 in 340ms
+ GET /staff 200 in 667ms
+ ✓ Compiled in 582ms (412 modules)
+ GET /favicon.ico 200 in 26ms
+ GET /billing 200 in 54ms
+ GET /billing 200 in 59ms
+ GET /billing 200 in 179ms
+ GET /billing 200 in 232ms
+ GET /billing 200 in 175ms
+ GET /billing 200 in 97ms
+ ✓ Compiled in 586ms (412 modules)
+ GET /staff 200 in 750ms
+ GET /billing 200 in 765ms
+ GET /favicon.ico 200 in 49ms
+ GET /waiter 200 in 91ms
+ GET /favicon.ico 200 in 240ms
+ GET /waiter 200 in 755ms
+ GET /favicon.ico 200 in 28ms
+ ✓ Compiled in 972ms (412 modules)
+ GET /billing 200 in 815ms
+ ✓ Compiled in 1040ms (412 modules)
+ GET /staff 200 in 671ms
+ GET /billing 200 in 319ms
+ GET /favicon.ico 200 in 105ms
+ GET /kitchen 200 in 85ms
+ GET /favicon.ico 200 in 109ms
+ GET /kitchen 200 in 429ms
+ GET /favicon.ico 200 in 23ms
+ ✓ Compiled in 1096ms (412 modules)
+ GET /staff 200 in 645ms
+ GET /billing 200 in 196ms
+ GET /favicon.ico 200 in 29ms
+ GET /billing 200 in 41ms
+ GET /favicon.ico 200 in 78ms
+ GET /billing 200 in 415ms
+ GET /favicon.ico 200 in 28ms
+ ✓ Compiled in 532ms (412 modules)
+ GET /staff 200 in 397ms
+ GET /billing 200 in 201ms
+ GET /favicon.ico 200 in 27ms
+ GET /admin 200 in 48ms
+ GET /favicon.ico 200 in 32ms
+ GET /admin 200 in 332ms
+ GET /favicon.ico 200 in 21ms
+ ✓ Compiled in 289ms (412 modules)
+ GET /book 200 in 306ms
+ GET /billing 200 in 251ms
+ GET /admin 200 in 261ms
+ GET /account 200 in 254ms
+ ✓ Compiled in 322ms (412 modules)
+ GET /billing 200 in 105ms
+ ✓ Compiled in 221ms (412 modules)
+ GET /billing 200 in 83ms
+ ✓ Compiled in 245ms (412 modules)
+ GET /billing 200 in 74ms
+ ✓ Compiled in 219ms (412 modules)
+ GET /billing 200 in 167ms
+ ✓ Compiled in 392ms (412 modules)
+ GET /billing 200 in 413ms
+ ✓ Compiled in 430ms (412 modules)
+ GET /billing 200 in 73ms
+ GET /staff 200 in 144ms
+ GET / 200 in 53ms
+ GET /book 200 in 53ms
+ GET /account?next=%2Fbook 200 in 65ms
+menu already seeded
+Restro listening on http://127.0.0.1:3847
+ ○ Compiling / ...
+ ✓ Compiled / in 3.9s (745 modules)
+ GET / 200 in 8180ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 4.2s (762 modules)
+ GET /favicon.ico 200 in 5019ms
+ GET / 200 in 1164ms
+ ✓ Compiled in 976ms (293 modules)
+ ✓ Compiled in 861ms (293 modules)
+ GET / 200 in 1224ms
+ ✓ Compiled in 895ms (293 modules)
+ GET / 200 in 702ms
+ GET / 200 in 75ms
+ ✓ Compiled in 525ms (293 modules)
+ GET / 200 in 865ms
+ GET / 200 in 1286ms
+ GET /favicon.ico 200 in 40ms
+ ○ Compiling /staff ...
+ ✓ Compiled /staff in 6.7s (773 modules)
+ GET /staff 200 in 8625ms
+ GET /favicon.ico 200 in 186ms
+ ✓ Compiled in 2.8s (297 modules)
+ GET /staff 200 in 2194ms
+ GET /favicon.ico 200 in 51ms
+ ○ Compiling /waiter ...
+ ✓ Compiled /waiter in 4.3s (1004 modules)
+ GET /waiter 200 in 5991ms
+ GET /favicon.ico 200 in 385ms
+ GET /waiter 200 in 2144ms
+ GET /favicon.ico 200 in 40ms
+ ✓ Compiled in 2.8s (402 modules)
+ GET /waiter 200 in 255ms
+ ✓ Compiled in 1093ms (402 modules)
+ GET /staff 200 in 1085ms
+ ✓ Compiled in 1014ms (402 modules)
+ GET /favicon.ico 200 in 360ms
+ ○ Compiling /kitchen ...
+ ✓ Compiled /kitchen in 1818ms (1011 modules)
+ GET /kitchen 200 in 2643ms
+ GET /favicon.ico 200 in 641ms
+ GET /kitchen 200 in 4563ms
+ GET /favicon.ico 200 in 274ms
+ ✓ Compiled in 3.9s (404 modules)
+ GET /staff 200 in 2049ms
+ GET /favicon.ico 200 in 109ms
+ ○ Compiling /billing ...
+ ✓ Compiled /billing in 3.8s (1020 modules)
+ GET /billing 200 in 4023ms
+ GET /favicon.ico 200 in 128ms
+ GET /billing 200 in 1096ms
+ GET /favicon.ico 200 in 34ms
+ ✓ Compiled in 1139ms (407 modules)
+ GET /staff 200 in 629ms
+ GET /favicon.ico 200 in 42ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 1072ms (1027 modules)
+ GET /admin 200 in 1345ms
+ GET /favicon.ico 200 in 54ms
+ GET /admin 200 in 1299ms
+ GET /favicon.ico 200 in 73ms
+ ○ Compiling /book ...
+ ✓ Compiled /book in 3.4s (1048 modules)
+ GET /book 200 in 4518ms
+ GET /admin 200 in 1158ms
+ ○ Compiling /account ...
+ ✓ Compiled /account in 1695ms (1041 modules)
+ GET /account 200 in 3168ms
+ ✓ Compiled in 1135ms (413 modules)
+ ✓ Compiled in 1203ms (413 modules)
+ ✓ Compiled in 737ms (413 modules)
+ GET / 200 in 590ms
+ GET / 200 in 324ms
+ GET /favicon.ico 200 in 58ms
+ GET /staff 200 in 196ms
+ GET /waiter 200 in 87ms
+ GET /staff 200 in 240ms
+ GET /kitchen 200 in 65ms
+ GET /staff 200 in 155ms
+ GET /billing 200 in 62ms
+ GET /staff 200 in 153ms
+ GET /admin 200 in 53ms
+ GET /kitchen 200 in 88ms
+ GET /waiter 200 in 52ms
+ GET /billing 200 in 45ms
+ GET /staff 200 in 149ms
+ GET / 200 in 56ms
+ GET /book 200 in 63ms
+ GET /account?next=%2Fbook 200 in 55ms
+[otp] mobile 8888777777 code 422313
+ GET /book 200 in 61ms
+ GET / 200 in 62ms
+ ✓ Compiled in 2.7s (955 modules)
+ GET / 200 in 522ms
+menu already seeded
+Restro listening on http://127.0.0.1:3847
+ ○ Compiling / ...
+ ✓ Compiled / in 6.5s (725 modules)
+ GET / 200 in 4548ms
+ GET / 200 in 8810ms
+ GET / 200 in 1617ms
+ GET / 200 in 641ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1533ms (466 modules)
+ GET /favicon.ico 200 in 2152ms
+ ○ Compiling /staff ...
+ ✓ Compiled /staff in 698ms (753 modules)
+ GET /staff 200 in 963ms
+ ○ Compiling /waiter ...
+ ✓ Compiled /waiter in 1101ms (998 modules)
+ GET /waiter 200 in 1480ms
+ GET /staff 200 in 471ms
+ GET / 200 in 186ms
+ ○ Compiling /book ...
+ ✓ Compiled /book in 1749ms (988 modules)
+ GET /book 200 in 2319ms
+ GET /book 200 in 80ms
+ GET /book 200 in 62ms
+ GET / 200 in 59ms
+ GET /staff 200 in 66ms
+ ○ Compiling /kitchen ...
+ ✓ Compiled /kitchen in 576ms (995 modules)
+ GET /kitchen 200 in 942ms
+ GET /kitchen 200 in 45ms
+ GET /staff 200 in 550ms
+ ○ Compiling /billing ...
+ ✓ Compiled /billing in 694ms (1004 modules)
+ GET /billing 200 in 845ms
+ GET /staff 200 in 410ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 919ms (995 modules)
+ GET /admin 200 in 1103ms
+ GET /admin 200 in 78ms
+ GET /staff 200 in 256ms
+ ○ Compiling / ...
+ ✓ Compiled / in 762ms (552 modules)
+ GET / 200 in 1362ms
+ GET / 200 in 109ms
+ GET /staff 200 in 54ms
+ ✓ Compiled /waiter in 491ms (617 modules)
+ GET /waiter 200 in 930ms
+ GET /staff 200 in 359ms
+ GET / 200 in 60ms
+ ✓ Compiled in 2.7s (1013 modules)
+ GET / 200 in 270ms
+ ✓ Compiled /book in 352ms (610 modules)
+ GET /book 200 in 560ms
+ ✓ Compiled in 505ms (408 modules)
+ GET /book 200 in 197ms
+ ✓ Compiled in 1800ms (1013 modules)
+ GET / 200 in 297ms
+ ✓ Compiled in 759ms (408 modules)
+ GET / 200 in 95ms

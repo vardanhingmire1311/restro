@@ -1,0 +1,3306 @@
+{
+  "version": 1,
+  "currency": "INR",
+  "source": "Owner 10-page menu transcription (menu/menu.source.md). Spellings are as printed. This file is the only menu seed.",
+  "compiledBy": "scripts/compile-menu.mjs",
+  "variantRule": "Slash prices and slash dish names are variants. The printed line is menuLine.",
+  "optionRule": "Choice-of lines, same-price style lists, cake flavours, and pasta shape + sauce are selectable options and do not change the price.",
+  "sections": [
+    {
+      "name": "Indian",
+      "categories": [
+        {
+          "name": "Soups (Veg.)",
+          "items": [
+            {
+              "name": "Cream of Tomato / Veg. / Palak / Mushroom",
+              "menuLine": "Cream of Tomato / Veg. / Palak / Mushroom",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Cream of Tomato",
+                  "price": 115
+                },
+                {
+                  "name": "Cream of Veg.",
+                  "price": 115
+                },
+                {
+                  "name": "Cream of Palak",
+                  "price": 115
+                },
+                {
+                  "name": "Cream of Mushroom",
+                  "price": 115
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 0
+            },
+            {
+              "name": "Tomato Dhaniya Shorba",
+              "menuLine": "Tomato Dhaniya Shorba",
+              "price": 115,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 1
+            },
+            {
+              "name": "Lemon Corriander",
+              "menuLine": "Lemon Corriander",
+              "price": 115,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 2
+            },
+            {
+              "name": "Almond Soup",
+              "menuLine": "Almond Soup",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 3
+            }
+          ]
+        },
+        {
+          "name": "Soups (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Adraki Shorba",
+              "menuLine": "Chicken Adraki Shorba",
+              "price": 140,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 4
+            },
+            {
+              "name": "Mutton Jahangiri Shorba",
+              "menuLine": "Mutton Jahangiri Shorba",
+              "price": 160,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 5
+            }
+          ]
+        },
+        {
+          "name": "Raitha & Salads",
+          "items": [
+            {
+              "name": "Choice of Raitha",
+              "menuLine": "Choice of Raitha (Boondi / Mixed Veg / Aloo Pudina / Pineapple)",
+              "price": 80,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Boondi",
+                    "Mixed Veg",
+                    "Aloo Pudina",
+                    "Pineapple"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 6
+            },
+            {
+              "name": "Choice of Salads",
+              "menuLine": "Choice of Salads (Green / Aloo Chat / Tandoori)",
+              "price": 80,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Green",
+                    "Aloo Chat",
+                    "Tandoori"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 7
+            }
+          ]
+        },
+        {
+          "name": "Starters (Veg.)",
+          "items": [
+            {
+              "name": "Tandoori Mushroom / Babycorn",
+              "menuLine": "Tandoori Mushroom / Babycorn",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Tandoori Mushroom",
+                  "price": 270
+                },
+                {
+                  "name": "Tandoori Babycorn",
+                  "price": 270
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 8
+            },
+            {
+              "name": "Assorted Veg Tikka",
+              "menuLine": "Assorted Veg Tikka",
+              "price": 310,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 9
+            },
+            {
+              "name": "Royal Veg Platter",
+              "menuLine": "Royal Veg Platter",
+              "price": 550,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 10
+            },
+            {
+              "name": "Paneer Malai Kabab",
+              "menuLine": "Paneer Malai Kabab",
+              "price": 310,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 11
+            },
+            {
+              "name": "Harabhara Kabab",
+              "menuLine": "Harabhara Kabab",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 12
+            },
+            {
+              "name": "Paneer Tikka",
+              "menuLine": "Paneer Tikka",
+              "price": 290,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 13
+            },
+            {
+              "name": "Paneer Achari Tikka",
+              "menuLine": "Paneer Achari Tikka",
+              "price": 290,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 14
+            },
+            {
+              "name": "Veg Sheekh Kabab",
+              "menuLine": "Veg Sheekh Kabab",
+              "price": 290,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 15
+            },
+            {
+              "name": "Tandoori Gobi",
+              "menuLine": "Tandoori Gobi",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 16
+            },
+            {
+              "name": "Tandoori Aloo",
+              "menuLine": "Tandoori Aloo",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 17
+            },
+            {
+              "name": "Paneer Pakoda",
+              "menuLine": "Paneer Pakoda",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 18
+            },
+            {
+              "name": "Roasted / Fry Papad",
+              "menuLine": "Roasted / Fry Papad",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Roasted Papad",
+                  "price": 30
+                },
+                {
+                  "name": "Fry Papad",
+                  "price": 30
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 19
+            },
+            {
+              "name": "Masala Papad",
+              "menuLine": "Masala Papad",
+              "price": 50,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 20
+            },
+            {
+              "name": "Fried Cashewnut",
+              "menuLine": "Fried Cashewnut",
+              "price": 300,
+              "veg": true,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 21
+            }
+          ]
+        },
+        {
+          "name": "Starters (Non Veg.)",
+          "items": [
+            {
+              "name": "Royal Non Veg Platter",
+              "menuLine": "Royal Non Veg Platter",
+              "price": 940,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 22
+            },
+            {
+              "name": "Tandoori Chicken",
+              "menuLine": "Tandoori Chicken (Full/Half)",
+              "variantKind": "portion",
+              "variants": [
+                {
+                  "name": "Full",
+                  "price": 520
+                },
+                {
+                  "name": "Half",
+                  "price": 275
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 23
+            },
+            {
+              "name": "Chicken Sheek Kabab",
+              "menuLine": "Chicken Sheek Kabab",
+              "price": 330,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 24
+            },
+            {
+              "name": "Chicken Reshami Kabab",
+              "menuLine": "Chicken Reshami Kabab",
+              "price": 330,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 25
+            },
+            {
+              "name": "Chicken Tangdi Kabab",
+              "menuLine": "Chicken Tangdi Kabab",
+              "price": 330,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 26
+            },
+            {
+              "name": "Jungli Chicken",
+              "menuLine": "Jungli Chicken",
+              "price": 370,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 27
+            },
+            {
+              "name": "Chicken Jafrani Kabab",
+              "menuLine": "Chicken Jafrani Kabab",
+              "price": 330,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 28
+            },
+            {
+              "name": "Lucknowi Murgh Kabab",
+              "menuLine": "Lucknowi Murgh Kabab",
+              "price": 330,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 29
+            },
+            {
+              "name": "Chicken Buransi Kabab",
+              "menuLine": "Chicken Buransi Kabab",
+              "price": 330,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 30
+            },
+            {
+              "name": "Mutton Sheek Kabab",
+              "menuLine": "Mutton Sheek Kabab",
+              "price": 490,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 31
+            },
+            {
+              "name": "Fish Tikka",
+              "menuLine": "Fish Tikka",
+              "price": 460,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 32
+            },
+            {
+              "name": "Fish / Prawns Koliwada",
+              "menuLine": "Fish / Prawns Koliwada",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Fish Koliwada",
+                  "price": 460
+                },
+                {
+                  "name": "Prawns Koliwada",
+                  "price": 460
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 33
+            },
+            {
+              "name": "Amritsari Fried Fish",
+              "menuLine": "Amritsari Fried Fish",
+              "price": 460,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 34
+            },
+            {
+              "name": "Rawa Fried Fish",
+              "menuLine": "Rawa Fried Fish",
+              "price": 460,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 35
+            },
+            {
+              "name": "Tawa Pomfret",
+              "menuLine": "Tawa Pomfret",
+              "price": 660,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 36
+            },
+            {
+              "name": "Tandoori Pomfret",
+              "menuLine": "Tandoori Pomfret",
+              "price": 660,
+              "veg": false,
+              "uiGroup": "Tandoori",
+              "station": "tandoor",
+              "sort": 37
+            },
+            {
+              "name": "Royal Sea Food Platter",
+              "menuLine": "Royal Sea Food Platter",
+              "price": 1800,
+              "veg": false,
+              "uiGroup": "Starters",
+              "station": "indian",
+              "sort": 38
+            }
+          ]
+        },
+        {
+          "name": "Main Course (Veg.)",
+          "items": [
+            {
+              "name": "Special Grand Tamanna Veg.",
+              "menuLine": "Special Grand Tamanna Veg.",
+              "price": 300,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 39
+            },
+            {
+              "name": "Choice of Veg.",
+              "menuLine": "Choice of Veg. (Miloni / Vegkadhai / Handi / Makhanawala Kolhapuri / Veg Tawa / Bhoona / Banjara)",
+              "price": 245,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Miloni",
+                    "Vegkadhai",
+                    "Handi",
+                    "Makhanawala Kolhapuri",
+                    "Veg Tawa",
+                    "Bhoona",
+                    "Banjara"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 40
+            },
+            {
+              "name": "Veg Thaima",
+              "menuLine": "Veg Thaima",
+              "price": 270,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 41
+            },
+            {
+              "name": "Veg Diwani Handi",
+              "menuLine": "Veg Diwani Handi",
+              "price": 255,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 42
+            },
+            {
+              "name": "Veg Lawabdar",
+              "menuLine": "Veg Lawabdar",
+              "price": 255,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 43
+            },
+            {
+              "name": "Paneer Bhurji",
+              "menuLine": "Paneer Bhurji",
+              "price": 285,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 44
+            },
+            {
+              "name": "Choice of Paneer",
+              "menuLine": "Choice of Paneer (Kadhai / Palak / Saagwala / Butter Masala / Shabnam / Tikka Masala / Mutter / Tinmirchwala / Methi / Kofta / Akabari / Jalfraizi / Shahajahani)",
+              "price": 275,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Kadhai",
+                    "Palak",
+                    "Saagwala",
+                    "Butter Masala",
+                    "Shabnam",
+                    "Tikka Masala",
+                    "Mutter",
+                    "Tinmirchwala",
+                    "Methi",
+                    "Kofta",
+                    "Akabari",
+                    "Jalfraizi",
+                    "Shahajahani"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 45
+            },
+            {
+              "name": "Paneer Noorani",
+              "menuLine": "Paneer Noorani",
+              "price": 275,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 46
+            },
+            {
+              "name": "Patiala Shai Gaste",
+              "menuLine": "Patiala Shai Gaste",
+              "price": 285,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 47
+            },
+            {
+              "name": "Subzi Nigami",
+              "menuLine": "Subzi Nigami",
+              "price": 275,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 48
+            },
+            {
+              "name": "Navaratna Korma",
+              "menuLine": "Navaratna Korma",
+              "price": 240,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 49
+            },
+            {
+              "name": "Methi Mutter Malai",
+              "menuLine": "Methi Mutter Malai",
+              "price": 230,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 50
+            },
+            {
+              "name": "Bhindi Do Pyaza",
+              "menuLine": "Bhindi Do Pyaza",
+              "price": 230,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 51
+            },
+            {
+              "name": "Shyam Savera",
+              "menuLine": "Shyam Savera",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 52
+            },
+            {
+              "name": "Dum Aloo",
+              "menuLine": "Dum Aloo (Kashmiri/Punjabi)",
+              "variantKind": "portion",
+              "variants": [
+                {
+                  "name": "Kashmiri",
+                  "price": 235
+                },
+                {
+                  "name": "Punjabi",
+                  "price": 230
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 53
+            },
+            {
+              "name": "Aloo Gobi / Mutter / Palak",
+              "menuLine": "Aloo Gobi / Mutter / Palak",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Aloo Gobi",
+                  "price": 230
+                },
+                {
+                  "name": "Aloo Mutter",
+                  "price": 230
+                },
+                {
+                  "name": "Aloo Palak",
+                  "price": 230
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 54
+            },
+            {
+              "name": "Chole Masala",
+              "menuLine": "Chole Masala",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 55
+            },
+            {
+              "name": "Rajma Masala",
+              "menuLine": "Rajma Masala",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 56
+            },
+            {
+              "name": "Harbhara Kabab Masala",
+              "menuLine": "Harbhara Kabab Masala",
+              "price": 255,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 57
+            },
+            {
+              "name": "Peshawari Chole",
+              "menuLine": "Peshawari Chole",
+              "price": 230,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 58
+            },
+            {
+              "name": "Mushroom Sundri",
+              "menuLine": "Mushroom Sundri",
+              "price": 255,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 59
+            },
+            {
+              "name": "Malai Kofta",
+              "menuLine": "Malai Kofta",
+              "price": 270,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 60
+            },
+            {
+              "name": "Vegetable Chatpata",
+              "menuLine": "Vegetable Chatpata",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 61
+            },
+            {
+              "name": "Panner Rajwada",
+              "menuLine": "Panner Rajwada",
+              "price": 310,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 62
+            },
+            {
+              "name": "Vegetable Patiala",
+              "menuLine": "Vegetable Patiala",
+              "price": 300,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 63
+            }
+          ]
+        },
+        {
+          "name": "Main Course (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Nawabi Handi",
+              "menuLine": "Chicken Nawabi Handi",
+              "price": 390,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 64
+            },
+            {
+              "name": "Murgh Mussallum",
+              "menuLine": "Murgh Mussallum",
+              "price": 770,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 65
+            },
+            {
+              "name": "Chicken Darbar",
+              "menuLine": "Chicken Darbar",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 66
+            },
+            {
+              "name": "Chicken Tikka Masala",
+              "menuLine": "Chicken Tikka Masala",
+              "price": 355,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 67
+            },
+            {
+              "name": "Chicken Handi",
+              "menuLine": "Chicken Handi",
+              "price": 355,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 68
+            },
+            {
+              "name": "Butter Chicken",
+              "menuLine": "Butter Chicken",
+              "price": 355,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 69
+            },
+            {
+              "name": "Chicken Patiyala",
+              "menuLine": "Chicken Patiyala",
+              "price": 410,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 70
+            },
+            {
+              "name": "Choice of Chicken",
+              "menuLine": "Choice of Chicken (Hara Dhaniya / Dahiwala / Methi / Saagwala / Malawani Kolhapuri / Chicken Kadhai / Do Pyaza / Handi / Masala / Mughlai)",
+              "price": 375,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Hara Dhaniya",
+                    "Dahiwala",
+                    "Methi",
+                    "Saagwala",
+                    "Malawani Kolhapuri",
+                    "Chicken Kadhai",
+                    "Do Pyaza",
+                    "Handi",
+                    "Masala",
+                    "Mughlai"
+                  ]
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 71
+            },
+            {
+              "name": "Chicken Shahajahani",
+              "menuLine": "Chicken Shahajahani",
+              "price": 400,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 72
+            },
+            {
+              "name": "Chicken Vindaloo",
+              "menuLine": "Chicken Vindaloo",
+              "price": 375,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 73
+            },
+            {
+              "name": "Chicken Rasila",
+              "menuLine": "Chicken Rasila",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 74
+            },
+            {
+              "name": "Chicken Mumtaj",
+              "menuLine": "Chicken Mumtaj",
+              "price": 425,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 75
+            },
+            {
+              "name": "Chicken Chattinad",
+              "menuLine": "Chicken Chattinad",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 76
+            },
+            {
+              "name": "Chicken Makhmali",
+              "menuLine": "Chicken Makhmali",
+              "price": 520,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 77
+            },
+            {
+              "name": "Chicken Steak Masala",
+              "menuLine": "Chicken Steak Masala",
+              "price": 425,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 78
+            },
+            {
+              "name": "Choice of Mutton",
+              "menuLine": "Choice of Mutton (Vindaloo / Saagwala / Kolhapuri / Masala / Do Pyaza Methi / Malawani / Rogan Josh / Bhoona)",
+              "price": 495,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Vindaloo",
+                    "Saagwala",
+                    "Kolhapuri",
+                    "Masala",
+                    "Do Pyaza Methi",
+                    "Malawani",
+                    "Rogan Josh",
+                    "Bhoona"
+                  ]
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 79
+            },
+            {
+              "name": "Mutton Kheema Masala",
+              "menuLine": "Mutton Kheema Masala",
+              "price": 495,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 80
+            },
+            {
+              "name": "Choice of Fish",
+              "menuLine": "Choice of Fish (Goan / Amritsari / Masala / Tikka Masala Malawani / Prawns Masala / Lasooni)",
+              "price": 495,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Goan",
+                    "Amritsari",
+                    "Masala",
+                    "Tikka Masala Malawani",
+                    "Prawns Masala",
+                    "Lasooni"
+                  ]
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 81
+            },
+            {
+              "name": "Pomfret Goan Curry",
+              "menuLine": "Pomfret Goan Curry",
+              "price": 625,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 82
+            },
+            {
+              "name": "Eggs Masala / Curry",
+              "menuLine": "Eggs Masala / Curry",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Eggs Masala",
+                  "price": 250
+                },
+                {
+                  "name": "Eggs Curry",
+                  "price": 250
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 83
+            },
+            {
+              "name": "Eggs Omelet",
+              "menuLine": "Eggs Omelet",
+              "price": 160,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 84
+            },
+            {
+              "name": "Eggs Bhurji",
+              "menuLine": "Eggs Bhurji",
+              "price": 180,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 85
+            },
+            {
+              "name": "Eggs Boiled",
+              "menuLine": "Eggs Boiled",
+              "price": 90,
+              "veg": false,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 86
+            }
+          ]
+        },
+        {
+          "name": "Dal",
+          "items": [
+            {
+              "name": "Choice of Dal",
+              "menuLine": "Choice of Dal (Dal Fry / Dal Tadka / Palak / Methi)",
+              "price": 180,
+              "optionGroups": [
+                {
+                  "name": "Choice",
+                  "required": true,
+                  "options": [
+                    "Dal Fry",
+                    "Dal Tadka",
+                    "Palak",
+                    "Methi"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 87
+            },
+            {
+              "name": "Dal Makhani",
+              "menuLine": "Dal Makhani",
+              "price": 200,
+              "veg": true,
+              "uiGroup": "Main Course",
+              "station": "indian",
+              "sort": 88
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "items": [
+            {
+              "name": "Steamed Rice",
+              "menuLine": "Steamed Rice",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 89
+            },
+            {
+              "name": "Kashamiri Pulav",
+              "menuLine": "Kashamiri Pulav",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 90
+            },
+            {
+              "name": "Peas Pulav",
+              "menuLine": "Peas Pulav",
+              "price": 185,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 91
+            },
+            {
+              "name": "Jeera Rice",
+              "menuLine": "Jeera Rice",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 92
+            },
+            {
+              "name": "Veg Pulav",
+              "menuLine": "Veg Pulav",
+              "price": 185,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 93
+            },
+            {
+              "name": "Makai Mirch Pulav",
+              "menuLine": "Makai Mirch Pulav",
+              "price": 190,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 94
+            },
+            {
+              "name": "Dal Khichadi",
+              "menuLine": "Dal Khichadi",
+              "price": 180,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 95
+            },
+            {
+              "name": "Curd Rice",
+              "menuLine": "Curd Rice",
+              "price": 180,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 96
+            },
+            {
+              "name": "Veg Biryani",
+              "menuLine": "Veg Biryani",
+              "price": 200,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 97
+            },
+            {
+              "name": "Veg Hydrabadi Biryani",
+              "menuLine": "Veg Hydrabadi Biryani",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 98
+            },
+            {
+              "name": "Chicken Biryani",
+              "menuLine": "Chicken Biryani",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 99
+            },
+            {
+              "name": "Chicken Dum Biryani",
+              "menuLine": "Chicken Dum Biryani",
+              "price": 380,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 100
+            },
+            {
+              "name": "Chicken Hydrabadi Biryani",
+              "menuLine": "Chicken Hydrabadi Biryani",
+              "price": 380,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 101
+            },
+            {
+              "name": "Chicken Tikka Biryani",
+              "menuLine": "Chicken Tikka Biryani (Boneless)",
+              "description": "Boneless",
+              "price": 380,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 102
+            },
+            {
+              "name": "Chicken Nawabi Biryani",
+              "menuLine": "Chicken Nawabi Biryani",
+              "price": 380,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 103
+            },
+            {
+              "name": "Mutton Biryani",
+              "menuLine": "Mutton Biryani",
+              "price": 400,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 104
+            },
+            {
+              "name": "Mutton Dum Biryani",
+              "menuLine": "Mutton Dum Biryani",
+              "price": 470,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 105
+            },
+            {
+              "name": "Mutton Hydrabadi Biryani",
+              "menuLine": "Mutton Hydrabadi Biryani",
+              "price": 470,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 106
+            },
+            {
+              "name": "Prawn Biryani",
+              "menuLine": "Prawn Biryani",
+              "price": 470,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 107
+            },
+            {
+              "name": "Eggs Biryani",
+              "menuLine": "Eggs Biryani",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Rice & Biryani",
+              "station": "indian",
+              "sort": 108
+            }
+          ]
+        },
+        {
+          "name": "Bread",
+          "items": [
+            {
+              "name": "Butter Roti",
+              "menuLine": "Butter Roti",
+              "price": 30,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 109
+            },
+            {
+              "name": "Missi Roti",
+              "menuLine": "Missi Roti",
+              "price": 45,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 110
+            },
+            {
+              "name": "Makai Roti",
+              "menuLine": "Makai Roti",
+              "price": 40,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 111
+            },
+            {
+              "name": "Naan",
+              "menuLine": "Naan",
+              "price": 40,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 112
+            },
+            {
+              "name": "Butter Naan",
+              "menuLine": "Butter Naan",
+              "price": 50,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 113
+            },
+            {
+              "name": "Garlic Naan",
+              "menuLine": "Garlic Naan",
+              "price": 60,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 114
+            },
+            {
+              "name": "Butter Garlic Naan",
+              "menuLine": "Butter Garlic Naan",
+              "price": 70,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 115
+            },
+            {
+              "name": "Roomali Roti",
+              "menuLine": "Roomali Roti",
+              "price": 40,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 116
+            },
+            {
+              "name": "Butter Roomali Roti",
+              "menuLine": "Butter Roomali Roti",
+              "price": 50,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 117
+            },
+            {
+              "name": "Laccha Paratha",
+              "menuLine": "Laccha Paratha",
+              "price": 45,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 118
+            },
+            {
+              "name": "Butter Laccha Paratha",
+              "menuLine": "Butter Laccha Paratha",
+              "price": 55,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 119
+            },
+            {
+              "name": "Paratha Methi / Pudina",
+              "menuLine": "Paratha Methi / Pudina",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Paratha Methi",
+                  "price": 50
+                },
+                {
+                  "name": "Paratha Pudina",
+                  "price": 50
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 120
+            },
+            {
+              "name": "Cheese Garlic Naan",
+              "menuLine": "Cheese Garlic Naan",
+              "price": 90,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 121
+            },
+            {
+              "name": "Kulcha",
+              "menuLine": "Kulcha",
+              "price": 60,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 122
+            },
+            {
+              "name": "Onion Kulcha",
+              "menuLine": "Onion Kulcha",
+              "price": 65,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 123
+            },
+            {
+              "name": "Masala Kulcha",
+              "menuLine": "Masala Kulcha",
+              "price": 110,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 124
+            },
+            {
+              "name": "Roti Basket",
+              "menuLine": "Roti Basket",
+              "price": 320,
+              "veg": true,
+              "uiGroup": "Breads",
+              "station": "indian",
+              "sort": 125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chinese",
+      "categories": [
+        {
+          "name": "Chinese Starters (Veg.)",
+          "items": [
+            {
+              "name": "Veg. Green Garlic Dry",
+              "menuLine": "Veg. Green Garlic Dry",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 126
+            },
+            {
+              "name": "Paneer Shakhi",
+              "menuLine": "Paneer Shakhi",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 127
+            },
+            {
+              "name": "Paneer Satay",
+              "menuLine": "Paneer Satay",
+              "price": 310,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 128
+            },
+            {
+              "name": "Veg Chinese Platter",
+              "menuLine": "Veg Chinese Platter",
+              "price": 600,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 129
+            },
+            {
+              "name": "Paneer Chilli",
+              "menuLine": "Paneer Chilli",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 130
+            },
+            {
+              "name": "Paneer In Hot Garlic Sauce",
+              "menuLine": "Paneer In Hot Garlic Sauce",
+              "price": 310,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 131
+            },
+            {
+              "name": "Mushroom Chilli",
+              "menuLine": "Mushroom Chilli",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 132
+            },
+            {
+              "name": "Chilli Crispy Veg",
+              "menuLine": "Chilli Crispy Veg",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 133
+            },
+            {
+              "name": "Golden Fried Babycorn",
+              "menuLine": "Golden Fried Babycorn",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 134
+            },
+            {
+              "name": "Veg / Gobi / Manchurian",
+              "menuLine": "Veg / Gobi / Manchurian",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Veg Manchurian",
+                  "price": 220
+                },
+                {
+                  "name": "Gobi Manchurian",
+                  "price": 220
+                },
+                {
+                  "name": "Manchurian",
+                  "price": 220
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 135
+            },
+            {
+              "name": "Veg Spring Roll",
+              "menuLine": "Veg Spring Roll",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 136
+            },
+            {
+              "name": "Mushroom Manchurian",
+              "menuLine": "Mushroom Manchurian",
+              "price": 290,
+              "veg": true,
+              "uiGroup": "Chinese Starters (Veg.)",
+              "station": "chinese",
+              "sort": 137
+            }
+          ]
+        },
+        {
+          "name": "Chinese Starters (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Chilli",
+              "menuLine": "Chicken Chilli",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 138
+            },
+            {
+              "name": "Chicken In Hot Garlic Sauce",
+              "menuLine": "Chicken In Hot Garlic Sauce",
+              "price": 360,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 139
+            },
+            {
+              "name": "Chicken Manchurian",
+              "menuLine": "Chicken Manchurian",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 140
+            },
+            {
+              "name": "Roasted Chicken In Soya Sauce",
+              "menuLine": "Roasted Chicken In Soya Sauce",
+              "price": 340,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 141
+            },
+            {
+              "name": "Chicken Lollypop",
+              "menuLine": "Chicken Lollypop",
+              "price": 300,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 142
+            },
+            {
+              "name": "Chicken Spring Rolls",
+              "menuLine": "Chicken Spring Rolls",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 143
+            },
+            {
+              "name": "Prawns",
+              "menuLine": "Prawns (Chilli / Spring Roll / Manchurian / Chilli Seasame)",
+              "price": 450,
+              "optionGroups": [
+                {
+                  "name": "Style",
+                  "required": true,
+                  "options": [
+                    "Chilli",
+                    "Spring Roll",
+                    "Manchurian",
+                    "Chilli Seasame"
+                  ]
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 144
+            },
+            {
+              "name": "Chicken Satay",
+              "menuLine": "Chicken Satay",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 145
+            },
+            {
+              "name": "Chicken Hongkong",
+              "menuLine": "Chicken Hongkong",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 146
+            },
+            {
+              "name": "Chinese Non Veg Platter",
+              "menuLine": "Chinese Non Veg Platter",
+              "price": 880,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 147
+            },
+            {
+              "name": "Fish Chilly",
+              "menuLine": "Fish Chilly",
+              "price": 450,
+              "veg": false,
+              "uiGroup": "Chinese Starters (Non Veg.)",
+              "station": "chinese",
+              "sort": 148
+            }
+          ]
+        },
+        {
+          "name": "Chinese Soup (Veg.)",
+          "items": [
+            {
+              "name": "Veg. Manchow",
+              "menuLine": "Veg. Manchow",
+              "price": 100,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 149
+            },
+            {
+              "name": "Veg. Hot And Sour Soup",
+              "menuLine": "Veg. Hot And Sour Soup",
+              "price": 100,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 150
+            },
+            {
+              "name": "Veg. Sweetcorn Soup",
+              "menuLine": "Veg. Sweetcorn Soup",
+              "price": 100,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 151
+            },
+            {
+              "name": "Veg Clear Soup",
+              "menuLine": "Veg Clear Soup",
+              "price": 100,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 152
+            },
+            {
+              "name": "Veg. Talumein Soup",
+              "menuLine": "Veg. Talumein Soup",
+              "price": 100,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 153
+            },
+            {
+              "name": "Baby Corn Mushroom Soup",
+              "menuLine": "Baby Corn Mushroom Soup",
+              "price": 120,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 154
+            },
+            {
+              "name": "Veg. Wanton Soup",
+              "menuLine": "Veg. Wanton Soup",
+              "price": 120,
+              "veg": true,
+              "uiGroup": "Chinese Soup (Veg.)",
+              "station": "chinese",
+              "sort": 155
+            }
+          ]
+        },
+        {
+          "name": "Chinese Soup (Non Veg)",
+          "items": [
+            {
+              "name": "Chicken Manchow",
+              "menuLine": "Chicken Manchow",
+              "price": 140,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 156
+            },
+            {
+              "name": "Hot and Sour Chicken Soup",
+              "menuLine": "Hot and Sour Chicken Soup",
+              "price": 140,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 157
+            },
+            {
+              "name": "Sweet Corn Chicken Soup",
+              "menuLine": "Sweet Corn Chicken Soup",
+              "price": 140,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 158
+            },
+            {
+              "name": "Chicken Clear Soup",
+              "menuLine": "Chicken Clear Soup",
+              "price": 140,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 159
+            },
+            {
+              "name": "Chicken Talumein Soup",
+              "menuLine": "Chicken Talumein Soup",
+              "price": 150,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 160
+            },
+            {
+              "name": "Chicken Wanton Soup",
+              "menuLine": "Chicken Wanton Soup",
+              "price": 150,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 161
+            },
+            {
+              "name": "Chinese Eggs Drop Soup",
+              "menuLine": "Chinese Eggs Drop Soup",
+              "price": 150,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 162
+            },
+            {
+              "name": "Lung Fung Soup",
+              "menuLine": "Lung Fung Soup",
+              "price": 160,
+              "veg": false,
+              "uiGroup": "Chinese Soup (Non Veg)",
+              "station": "chinese",
+              "sort": 163
+            }
+          ]
+        },
+        {
+          "name": "Chinese Rice (Veg.)",
+          "items": [
+            {
+              "name": "Veg. Fried Rice",
+              "menuLine": "Veg. Fried Rice",
+              "price": 210,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 164
+            },
+            {
+              "name": "Veg. Schezwan Fried Rice",
+              "menuLine": "Veg. Schezwan Fried Rice",
+              "price": 230,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 165
+            },
+            {
+              "name": "Veg. Combination Fried Rice",
+              "menuLine": "Veg. Combination Fried Rice",
+              "price": 290,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 166
+            },
+            {
+              "name": "Mushroom Corn Fried Rice",
+              "menuLine": "Mushroom Corn Fried Rice",
+              "price": 270,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 167
+            },
+            {
+              "name": "Corn Mushroom Cupsium Fried Rice",
+              "menuLine": "Corn Mushroom Cupsium Fried Rice",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 168
+            },
+            {
+              "name": "Stewed Rice",
+              "menuLine": "Stewed Rice",
+              "price": 230,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 169
+            },
+            {
+              "name": "Veg Tripple Schezwan Rice",
+              "menuLine": "Veg Tripple Schezwan Rice",
+              "price": 300,
+              "veg": true,
+              "uiGroup": "Chinese Rice (Veg.)",
+              "station": "chinese",
+              "sort": 170
+            }
+          ]
+        },
+        {
+          "name": "Chinese Rice (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Fried Rice",
+              "menuLine": "Chicken Fried Rice",
+              "price": 290,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 171
+            },
+            {
+              "name": "Chicken Sez Fried Rice",
+              "menuLine": "Chicken Sez Fried Rice",
+              "price": 310,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 172
+            },
+            {
+              "name": "Triple Schezwan Rice",
+              "menuLine": "Triple Schezwan Rice",
+              "price": 370,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 173
+            },
+            {
+              "name": "Chicken Combination Rice",
+              "menuLine": "Chicken Combination Rice",
+              "price": 370,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 174
+            },
+            {
+              "name": "Eggs Fried Rice",
+              "menuLine": "Eggs Fried Rice",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 175
+            },
+            {
+              "name": "Prawns Fried Rice",
+              "menuLine": "Prawns Fried Rice",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 176
+            },
+            {
+              "name": "Mix Fried Rice",
+              "menuLine": "Mix Fried Rice",
+              "price": 370,
+              "veg": false,
+              "uiGroup": "Chinese Rice (Non Veg.)",
+              "station": "chinese",
+              "sort": 177
+            }
+          ]
+        },
+        {
+          "name": "Chinese Main Course (Veg)",
+          "items": [
+            {
+              "name": "Baby Corn Mushroom Hot Garlic Sauce",
+              "menuLine": "Baby Corn Mushroom Hot Garlic Sauce",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Main Course (Veg)",
+              "station": "chinese",
+              "sort": 178
+            },
+            {
+              "name": "Hot & Sour Vegetable",
+              "menuLine": "Hot & Sour Vegetable",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Main Course (Veg)",
+              "station": "chinese",
+              "sort": 179
+            },
+            {
+              "name": "Sweet & Sour Veg",
+              "menuLine": "Sweet & Sour Veg",
+              "price": 280,
+              "veg": true,
+              "uiGroup": "Chinese Main Course (Veg)",
+              "station": "chinese",
+              "sort": 180
+            }
+          ]
+        },
+        {
+          "name": "Chinese Main Course (Non Veg)",
+          "items": [
+            {
+              "name": "Chicken In Spring Onion Sauce",
+              "menuLine": "Chicken In Spring Onion Sauce",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Main Course (Non Veg)",
+              "station": "chinese",
+              "sort": 181
+            },
+            {
+              "name": "Chicken In Black Bean Sauce",
+              "menuLine": "Chicken In Black Bean Sauce",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Main Course (Non Veg)",
+              "station": "chinese",
+              "sort": 182
+            },
+            {
+              "name": "Ginger Chicken In Honey Sauce",
+              "menuLine": "Ginger Chicken In Honey Sauce",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Main Course (Non Veg)",
+              "station": "chinese",
+              "sort": 183
+            },
+            {
+              "name": "Shredded Chicken In Oyster Sauce",
+              "menuLine": "Shredded Chicken In Oyster Sauce",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Main Course (Non Veg)",
+              "station": "chinese",
+              "sort": 184
+            },
+            {
+              "name": "Slice Chicken Wine Sauce",
+              "menuLine": "Slice Chicken Wine Sauce",
+              "price": 320,
+              "veg": false,
+              "uiGroup": "Chinese Main Course (Non Veg)",
+              "station": "chinese",
+              "sort": 185
+            }
+          ]
+        },
+        {
+          "name": "Chinese Noodles (Veg.)",
+          "items": [
+            {
+              "name": "Veg. Hakka Noodles",
+              "menuLine": "Veg. Hakka Noodles",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Chinese Noodles (Veg.)",
+              "station": "chinese",
+              "sort": 186
+            },
+            {
+              "name": "Veg. Chowmein",
+              "menuLine": "Veg. Chowmein",
+              "price": 220,
+              "veg": true,
+              "uiGroup": "Chinese Noodles (Veg.)",
+              "station": "chinese",
+              "sort": 187
+            },
+            {
+              "name": "Veg. Schezwan Noodles",
+              "menuLine": "Veg. Schezwan Noodles",
+              "price": 240,
+              "veg": true,
+              "uiGroup": "Chinese Noodles (Veg.)",
+              "station": "chinese",
+              "sort": 188
+            },
+            {
+              "name": "American Chopsuey",
+              "menuLine": "American Chopsuey",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Chinese Noodles (Veg.)",
+              "station": "chinese",
+              "sort": 189
+            },
+            {
+              "name": "Singaporian Noodles",
+              "menuLine": "Singaporian Noodles",
+              "price": 260,
+              "veg": true,
+              "uiGroup": "Chinese Noodles (Veg.)",
+              "station": "chinese",
+              "sort": 190
+            },
+            {
+              "name": "Shanghai Noodles",
+              "menuLine": "Shanghai Noodles",
+              "price": 240,
+              "veg": true,
+              "uiGroup": "Chinese Noodles (Veg.)",
+              "station": "chinese",
+              "sort": 191
+            }
+          ]
+        },
+        {
+          "name": "Chinese Noodles (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Hakka Noodles",
+              "menuLine": "Chicken Hakka Noodles",
+              "price": 290,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 192
+            },
+            {
+              "name": "Chicken Chowmein",
+              "menuLine": "Chicken Chowmein",
+              "price": 290,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 193
+            },
+            {
+              "name": "Chicken American Chopsuey",
+              "menuLine": "Chicken American Chopsuey",
+              "price": 310,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 194
+            },
+            {
+              "name": "Eggs Noodles",
+              "menuLine": "Eggs Noodles",
+              "price": 210,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 195
+            },
+            {
+              "name": "Prawns Noodles",
+              "menuLine": "Prawns Noodles",
+              "price": 350,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 196
+            },
+            {
+              "name": "Chicken Sez Noodles",
+              "menuLine": "Chicken Sez Noodles",
+              "price": 360,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 197
+            },
+            {
+              "name": "Chicken Singaporian Noodles",
+              "menuLine": "Chicken Singaporian Noodles",
+              "price": 310,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 198
+            },
+            {
+              "name": "Chicken Shanghai Noodles",
+              "menuLine": "Chicken Shanghai Noodles",
+              "price": 280,
+              "veg": false,
+              "uiGroup": "Chinese Noodles (Non Veg.)",
+              "station": "chinese",
+              "sort": 199
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Italian",
+      "categories": [
+        {
+          "name": "Italian Starters (Veg.)",
+          "items": [
+            {
+              "name": "Bruchetta Platter",
+              "menuLine": "Bruchetta Platter (Garlic flavour bruchetta topped with buttered mushrooms & roasted bell peppers)",
+              "description": "Garlic flavour bruchetta topped with buttered mushrooms & roasted bell peppers",
+              "price": 380,
+              "veg": true,
+              "uiGroup": "Italian Starters (Veg.)",
+              "station": "italian",
+              "sort": 200
+            },
+            {
+              "name": "Stuffed Mushrooms",
+              "menuLine": "Stuffed Mushrooms (stuffed with cottage cheese & herbs, marinara sauce)",
+              "description": "stuffed with cottage cheese & herbs, marinara sauce",
+              "price": 350,
+              "veg": true,
+              "uiGroup": "Italian Starters (Veg.)",
+              "station": "italian",
+              "sort": 201
+            },
+            {
+              "name": "Spinach And Corn Croquetts",
+              "menuLine": "Spinach And Corn Croquetts (deep fried, cheese, spinach, corn, cocktail sauce)",
+              "description": "deep fried, cheese, spinach, corn, cocktail sauce",
+              "price": 290,
+              "veg": true,
+              "uiGroup": "Italian Starters (Veg.)",
+              "station": "italian",
+              "sort": 202
+            },
+            {
+              "name": "Potato Corn Tikki",
+              "menuLine": "Potato Corn Tikki",
+              "price": 250,
+              "veg": true,
+              "uiGroup": "Italian Starters (Veg.)",
+              "station": "italian",
+              "sort": 203
+            }
+          ]
+        },
+        {
+          "name": "Italian Starters (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Nuggets",
+              "menuLine": "Chicken Nuggets (with cheese sauce)",
+              "description": "with cheese sauce",
+              "price": 380,
+              "veg": false,
+              "uiGroup": "Italian Starters (Non Veg.)",
+              "station": "italian",
+              "sort": 204
+            },
+            {
+              "name": "Fish Fingers",
+              "menuLine": "Fish Fingers (with tartar sauce)",
+              "description": "with tartar sauce",
+              "price": 490,
+              "veg": false,
+              "uiGroup": "Italian Starters (Non Veg.)",
+              "station": "italian",
+              "sort": 205
+            },
+            {
+              "name": "Fish Croquette",
+              "menuLine": "Fish Croquette (minced fish, peppers & sweet corn, spicy cocktail sauce)",
+              "description": "minced fish, peppers & sweet corn, spicy cocktail sauce",
+              "price": 490,
+              "veg": false,
+              "uiGroup": "Italian Starters (Non Veg.)",
+              "station": "italian",
+              "sort": 206
+            }
+          ]
+        },
+        {
+          "name": "Italian Soup (Veg.)",
+          "items": [
+            {
+              "name": "Tomato And Leek Soup",
+              "menuLine": "Tomato And Leek Soup",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Italian Soup (Veg.)",
+              "station": "italian",
+              "sort": 207
+            },
+            {
+              "name": "Crema Fungi Soup",
+              "menuLine": "Crema Fungi Soup",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Italian Soup (Veg.)",
+              "station": "italian",
+              "sort": 208
+            },
+            {
+              "name": "Minestrone Soup",
+              "menuLine": "Minestrone Soup",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Italian Soup (Veg.)",
+              "station": "italian",
+              "sort": 209
+            }
+          ]
+        },
+        {
+          "name": "Italian Main Course (Veg.)",
+          "items": [
+            {
+              "name": "Vegetable Lasagne",
+              "menuLine": "Vegetable Lasagne",
+              "price": 360,
+              "veg": true,
+              "uiGroup": "Italian Main Course (Veg.)",
+              "station": "italian",
+              "sort": 210
+            },
+            {
+              "name": "Baked Veg Casarole",
+              "menuLine": "Baked Veg Casarole",
+              "price": 360,
+              "veg": true,
+              "uiGroup": "Italian Main Course (Veg.)",
+              "station": "italian",
+              "sort": 211
+            },
+            {
+              "name": "Ferdinad",
+              "menuLine": "Ferdinad (farm fresh vegetables in delicate sauce with special rice)",
+              "description": "farm fresh vegetables in delicate sauce with special rice",
+              "price": 360,
+              "veg": true,
+              "uiGroup": "Italian Main Course (Veg.)",
+              "station": "italian",
+              "sort": 212
+            }
+          ]
+        },
+        {
+          "name": "Italian Main Course (Non Veg)",
+          "items": [
+            {
+              "name": "Chicken Spaghetti Bolognaise",
+              "menuLine": "Chicken Spaghetti Bolognaise",
+              "price": 390,
+              "veg": false,
+              "uiGroup": "Italian Main Course (Non Veg)",
+              "station": "italian",
+              "sort": 213
+            },
+            {
+              "name": "Chicken Monaco",
+              "menuLine": "Chicken Monaco (olive, mushroom, mix veg in brown sauce)",
+              "description": "olive, mushroom, mix veg in brown sauce",
+              "price": 470,
+              "veg": false,
+              "uiGroup": "Italian Main Course (Non Veg)",
+              "station": "italian",
+              "sort": 214
+            },
+            {
+              "name": "Chicken Sicillia",
+              "menuLine": "Chicken Sicillia (olives, peppers in brown sauce, herbed rice & buttered vegetables)",
+              "description": "olives, peppers in brown sauce, herbed rice & buttered vegetables",
+              "price": 390,
+              "veg": false,
+              "uiGroup": "Italian Main Course (Non Veg)",
+              "station": "italian",
+              "sort": 215
+            }
+          ]
+        },
+        {
+          "name": "Pasta",
+          "items": [
+            {
+              "name": "Vegetable Pasta",
+              "menuLine": "Vegetable Pasta",
+              "price": 240,
+              "optionGroups": [
+                {
+                  "name": "Shape",
+                  "required": true,
+                  "options": [
+                    "Spaghetti",
+                    "Penne",
+                    "Farfale",
+                    "Macroni",
+                    "Fettucini",
+                    "Fussili"
+                  ]
+                },
+                {
+                  "name": "Sauce",
+                  "required": true,
+                  "options": [
+                    "Creamy Cheese",
+                    "Arrabbita",
+                    "Pesto",
+                    "Mix"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Pasta",
+              "station": "italian",
+              "sort": 216
+            },
+            {
+              "name": "Chicken Pasta",
+              "menuLine": "Chicken Pasta",
+              "price": 390,
+              "optionGroups": [
+                {
+                  "name": "Shape",
+                  "required": true,
+                  "options": [
+                    "Spaghetti",
+                    "Penne",
+                    "Farfale",
+                    "Macroni",
+                    "Fettucini",
+                    "Fussili"
+                  ]
+                },
+                {
+                  "name": "Sauce",
+                  "required": true,
+                  "options": [
+                    "Creamy Cheese",
+                    "Arrabbita",
+                    "Pesto",
+                    "Mix"
+                  ]
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Pasta",
+              "station": "italian",
+              "sort": 217
+            },
+            {
+              "name": "Fish Pasta",
+              "menuLine": "Fish Pasta",
+              "price": 490,
+              "optionGroups": [
+                {
+                  "name": "Shape",
+                  "required": true,
+                  "options": [
+                    "Spaghetti",
+                    "Penne",
+                    "Farfale",
+                    "Macroni",
+                    "Fettucini",
+                    "Fussili"
+                  ]
+                },
+                {
+                  "name": "Sauce",
+                  "required": true,
+                  "options": [
+                    "Creamy Cheese",
+                    "Arrabbita",
+                    "Pesto",
+                    "Mix"
+                  ]
+                }
+              ],
+              "veg": false,
+              "uiGroup": "Pasta",
+              "station": "italian",
+              "sort": 218
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Continental",
+      "categories": [
+        {
+          "name": "Soup (Non Veg.)",
+          "items": [
+            {
+              "name": "Poulet De Asparagas",
+              "menuLine": "Poulet De Asparagas",
+              "price": 150,
+              "veg": false,
+              "uiGroup": "Soup (Non Veg.)",
+              "station": "continental",
+              "sort": 219
+            },
+            {
+              "name": "Scotch Broth",
+              "menuLine": "Scotch Broth",
+              "price": 150,
+              "veg": false,
+              "uiGroup": "Soup (Non Veg.)",
+              "station": "continental",
+              "sort": 220
+            },
+            {
+              "name": "Shrimp & Basil",
+              "menuLine": "Shrimp & Basil",
+              "price": 170,
+              "veg": false,
+              "uiGroup": "Soup (Non Veg.)",
+              "station": "continental",
+              "sort": 221
+            }
+          ]
+        },
+        {
+          "name": "Starters (Chicken)",
+          "items": [
+            {
+              "name": "Barbecue Glazed Chicken",
+              "menuLine": "Barbecue Glazed Chicken",
+              "price": 410,
+              "veg": false,
+              "uiGroup": "Starters (Chicken)",
+              "station": "continental",
+              "sort": 222
+            },
+            {
+              "name": "Lemon Chicken With Garlic",
+              "menuLine": "Lemon Chicken With Garlic",
+              "price": 410,
+              "veg": false,
+              "uiGroup": "Starters (Chicken)",
+              "station": "continental",
+              "sort": 223
+            },
+            {
+              "name": "Golden Parmesan Chicken",
+              "menuLine": "Golden Parmesan Chicken",
+              "price": 450,
+              "veg": false,
+              "uiGroup": "Starters (Chicken)",
+              "station": "continental",
+              "sort": 224
+            }
+          ]
+        },
+        {
+          "name": "Main Course (Veg.)",
+          "items": [
+            {
+              "name": "Baked Vegetable Princess",
+              "menuLine": "Baked Vegetable Princess",
+              "price": 380,
+              "veg": true,
+              "uiGroup": "Main Course (Veg.)",
+              "station": "continental",
+              "sort": 225
+            },
+            {
+              "name": "Baked A La Fungi",
+              "menuLine": "Baked A La Fungi",
+              "price": 380,
+              "veg": true,
+              "uiGroup": "Main Course (Veg.)",
+              "station": "continental",
+              "sort": 226
+            },
+            {
+              "name": "Canaloni Floran Tine",
+              "menuLine": "Canaloni Floran Tine",
+              "price": 380,
+              "veg": true,
+              "uiGroup": "Main Course (Veg.)",
+              "station": "continental",
+              "sort": 227
+            }
+          ]
+        },
+        {
+          "name": "Fish",
+          "items": [
+            {
+              "name": "Fillet of Fish with Lemon Butter Sauce",
+              "menuLine": "Fillet of Fish with Lemon Butter Sauce",
+              "price": 750,
+              "veg": false,
+              "uiGroup": "Fish",
+              "station": "continental",
+              "sort": 228
+            }
+          ]
+        },
+        {
+          "name": "Chicken",
+          "items": [
+            {
+              "name": "Chicken Normandy",
+              "menuLine": "Chicken Normandy",
+              "price": 480,
+              "veg": false,
+              "uiGroup": "Chicken",
+              "station": "continental",
+              "sort": 229
+            },
+            {
+              "name": "Portugaise Chicken",
+              "menuLine": "Portugaise Chicken",
+              "price": 480,
+              "veg": false,
+              "uiGroup": "Chicken",
+              "station": "continental",
+              "sort": 230
+            },
+            {
+              "name": "Roast Chicken",
+              "menuLine": "Roast Chicken",
+              "price": 480,
+              "veg": false,
+              "uiGroup": "Chicken",
+              "station": "continental",
+              "sort": 231
+            },
+            {
+              "name": "Grilled Chicken",
+              "menuLine": "Grilled Chicken",
+              "price": 480,
+              "veg": false,
+              "uiGroup": "Chicken",
+              "station": "continental",
+              "sort": 232
+            }
+          ]
+        },
+        {
+          "name": "Continental Salad (Veg.)",
+          "items": [
+            {
+              "name": "Pickled Red Cabbage Salad",
+              "menuLine": "Pickled Red Cabbage Salad",
+              "price": 135,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 233
+            },
+            {
+              "name": "Waldorf Salad",
+              "menuLine": "Waldorf Salad",
+              "price": 190,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 234
+            },
+            {
+              "name": "Coleslaw Salad",
+              "menuLine": "Coleslaw Salad",
+              "price": 140,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 235
+            },
+            {
+              "name": "Veg Club Salad",
+              "menuLine": "Veg Club Salad",
+              "price": 170,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 236
+            },
+            {
+              "name": "Tossed Salad",
+              "menuLine": "Tossed Salad",
+              "price": 140,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 237
+            },
+            {
+              "name": "Russian Salad",
+              "menuLine": "Russian Salad",
+              "price": 170,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 238
+            },
+            {
+              "name": "Potato Macaroni Salad",
+              "menuLine": "Potato Macaroni Salad",
+              "price": 170,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 239
+            },
+            {
+              "name": "Cesear Salad",
+              "menuLine": "Cesear Salad",
+              "price": 170,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 240
+            },
+            {
+              "name": "Pasta Salad",
+              "menuLine": "Pasta Salad",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 241
+            },
+            {
+              "name": "Tomato Bessil Salad",
+              "menuLine": "Tomato Bessil Salad",
+              "price": 170,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 242
+            },
+            {
+              "name": "Greek Salad",
+              "menuLine": "Greek Salad",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Continental Salad (Veg.)",
+              "station": "continental",
+              "sort": 243
+            }
+          ]
+        },
+        {
+          "name": "Continental Salad (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Club Salad",
+              "menuLine": "Chicken Club Salad",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Continental Salad (Non Veg.)",
+              "station": "continental",
+              "sort": 244
+            },
+            {
+              "name": "Cesear Salad",
+              "menuLine": "Cesear Salad (Chicken)",
+              "description": "Chicken",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Continental Salad (Non Veg.)",
+              "station": "continental",
+              "sort": 245
+            },
+            {
+              "name": "Spicy Chiken Salad",
+              "menuLine": "Spicy Chiken Salad",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Continental Salad (Non Veg.)",
+              "station": "continental",
+              "sort": 246
+            },
+            {
+              "name": "Chicken Hawain Salad",
+              "menuLine": "Chicken Hawain Salad",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Continental Salad (Non Veg.)",
+              "station": "continental",
+              "sort": 247
+            },
+            {
+              "name": "Grilled Chicken Salad",
+              "menuLine": "Grilled Chicken Salad",
+              "price": 250,
+              "veg": false,
+              "uiGroup": "Continental Salad (Non Veg.)",
+              "station": "continental",
+              "sort": 248
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "categories": [
+        {
+          "name": "Desserts",
+          "items": [
+            {
+              "name": "Double Sunday",
+              "menuLine": "Double Sunday",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 249
+            },
+            {
+              "name": "Tripple Sunday",
+              "menuLine": "Tripple Sunday",
+              "price": 200,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 250
+            },
+            {
+              "name": "Fruit Custard",
+              "menuLine": "Fruit Custard",
+              "price": 130,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 251
+            },
+            {
+              "name": "Fresh Fruit Salad",
+              "menuLine": "Fresh Fruit Salad",
+              "price": 125,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 252
+            },
+            {
+              "name": "Sizzling Brownie with Ice cream",
+              "menuLine": "Sizzling Brownie with Ice cream",
+              "price": 170,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 253
+            },
+            {
+              "name": "Hot Chocolate Fudge with Ice cream",
+              "menuLine": "Hot Chocolate Fudge with Ice cream",
+              "price": 190,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 254
+            },
+            {
+              "name": "Malai / Matka Kulfi",
+              "menuLine": "Malai / Matka Kulfi",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Malai Kulfi",
+                  "price": 110
+                },
+                {
+                  "name": "Matka Kulfi",
+                  "price": 110
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 255
+            },
+            {
+              "name": "Gulab Jamun",
+              "menuLine": "Gulab Jamun",
+              "price": 90,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 256
+            },
+            {
+              "name": "Ice Cream",
+              "menuLine": "Ice Cream",
+              "price": 110,
+              "veg": true,
+              "uiGroup": "Desserts",
+              "station": "dessert",
+              "sort": 257
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bakery",
+      "categories": [
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Egg less Cake",
+              "menuLine": "Egg less Cake (Black forest / Pineapple / Butterscotch / Mango / Strawberry / Vanilla / Orange / Irish coffee)",
+              "price": 325,
+              "optionGroups": [
+                {
+                  "name": "Flavour",
+                  "required": true,
+                  "options": [
+                    "Black forest",
+                    "Pineapple",
+                    "Butterscotch",
+                    "Mango",
+                    "Strawberry",
+                    "Vanilla",
+                    "Orange",
+                    "Irish coffee"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 258
+            },
+            {
+              "name": "Egg less Cake",
+              "menuLine": "Egg less Cake (Chocolate / Chocolate Truffle)",
+              "price": 350,
+              "optionGroups": [
+                {
+                  "name": "Flavour",
+                  "required": true,
+                  "options": [
+                    "Chocolate",
+                    "Chocolate Truffle"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 259
+            },
+            {
+              "name": "Chocolate Walnuts",
+              "menuLine": "Chocolate Walnuts",
+              "price": 400,
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 260
+            },
+            {
+              "name": "Chocolate Almond",
+              "menuLine": "Chocolate Almond",
+              "price": 400,
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 261
+            },
+            {
+              "name": "Mix Fruit Cake",
+              "menuLine": "Mix Fruit Cake",
+              "price": 400,
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 262
+            },
+            {
+              "name": "Pastries",
+              "menuLine": "Pastries (same flavours)",
+              "description": "Same flavours as egg less cake.",
+              "price": 70,
+              "optionGroups": [
+                {
+                  "name": "Flavour",
+                  "required": true,
+                  "options": [
+                    "Black forest",
+                    "Pineapple",
+                    "Butterscotch",
+                    "Mango",
+                    "Strawberry",
+                    "Vanilla",
+                    "Orange",
+                    "Irish coffee"
+                  ]
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 263
+            },
+            {
+              "name": "Chocolate Pastries",
+              "menuLine": "Chocolate Pastries",
+              "price": 80,
+              "veg": true,
+              "uiGroup": "Bakery",
+              "station": "bakery",
+              "sort": 264
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mocktails",
+      "categories": [
+        {
+          "name": "Mocktails",
+          "items": [
+            {
+              "name": "Mint Delight",
+              "menuLine": "Mint Delight",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 265
+            },
+            {
+              "name": "Virgin Pina Colada",
+              "menuLine": "Virgin Pina Colada",
+              "price": 165,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 266
+            },
+            {
+              "name": "Virgin Mary",
+              "menuLine": "Virgin Mary",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 267
+            },
+            {
+              "name": "Sophisticated Lady",
+              "menuLine": "Sophisticated Lady",
+              "price": 140,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 268
+            },
+            {
+              "name": "Fruit Punch",
+              "menuLine": "Fruit Punch",
+              "price": 140,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 269
+            },
+            {
+              "name": "Sweet Princess",
+              "menuLine": "Sweet Princess",
+              "price": 140,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 270
+            },
+            {
+              "name": "Fruit Fantasy",
+              "menuLine": "Fruit Fantasy",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 271
+            },
+            {
+              "name": "Green Angel",
+              "menuLine": "Green Angel",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 272
+            },
+            {
+              "name": "Orange Peach Blossom",
+              "menuLine": "Orange Peach Blossom",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 273
+            },
+            {
+              "name": "Red Blossom",
+              "menuLine": "Red Blossom",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 274
+            },
+            {
+              "name": "Green Granite",
+              "menuLine": "Green Granite",
+              "price": 160,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 275
+            },
+            {
+              "name": "Virgin Mojito / Paan Mojito",
+              "menuLine": "Virgin Mojito / Paan Mojito",
+              "variantKind": "dish",
+              "variants": [
+                {
+                  "name": "Virgin Mojito",
+                  "price": 150
+                },
+                {
+                  "name": "Paan Mojito",
+                  "price": 150
+                }
+              ],
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 276
+            },
+            {
+              "name": "Cucumber Cooler",
+              "menuLine": "Cucumber Cooler",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 277
+            },
+            {
+              "name": "Cumin Spice",
+              "menuLine": "Cumin Spice",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 278
+            },
+            {
+              "name": "Peach Ice Tea",
+              "menuLine": "Peach Ice Tea",
+              "price": 150,
+              "veg": true,
+              "uiGroup": "Beverages",
+              "station": "bar",
+              "sort": 279
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sandwiches",
+      "categories": [
+        {
+          "name": "Sandwiches (Veg.)",
+          "items": [
+            {
+              "name": "Vegetarian Sandwich",
+              "menuLine": "Vegetarian Sandwich",
+              "price": 60,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 280
+            },
+            {
+              "name": "Chutney Sandwich",
+              "menuLine": "Chutney Sandwich",
+              "price": 55,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 281
+            },
+            {
+              "name": "Bread Butter",
+              "menuLine": "Bread Butter",
+              "price": 55,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 282
+            },
+            {
+              "name": "Bread Butter Jam",
+              "menuLine": "Bread Butter Jam",
+              "price": 60,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 283
+            },
+            {
+              "name": "Veg. & Cheese Grilled Sandwich",
+              "menuLine": "Veg. & Cheese Grilled Sandwich",
+              "price": 95,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 284
+            },
+            {
+              "name": "Veg. Grilled Sandwich",
+              "menuLine": "Veg. Grilled Sandwich",
+              "price": 70,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 285
+            },
+            {
+              "name": "Cheese Sandwich",
+              "menuLine": "Cheese Sandwich",
+              "price": 75,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 286
+            },
+            {
+              "name": "Toasted Cheese Sandwich",
+              "menuLine": "Toasted Cheese Sandwich",
+              "price": 85,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 287
+            },
+            {
+              "name": "Coleslaw Sandwich",
+              "menuLine": "Coleslaw Sandwich",
+              "price": 90,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 288
+            },
+            {
+              "name": "Corn & Capsicum Sandwich",
+              "menuLine": "Corn & Capsicum Sandwich",
+              "price": 90,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 289
+            },
+            {
+              "name": "Paneer Achari Sandwich",
+              "menuLine": "Paneer Achari Sandwich",
+              "price": 110,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 290
+            },
+            {
+              "name": "Veg. Sezchwan Sandwich",
+              "menuLine": "Veg. Sezchwan Sandwich",
+              "price": 110,
+              "veg": true,
+              "uiGroup": "Sandwiches (Veg.)",
+              "station": "sandwich",
+              "sort": 291
+            }
+          ]
+        },
+        {
+          "name": "Sandwiches (Non Veg.)",
+          "items": [
+            {
+              "name": "Chicken Sandwich",
+              "menuLine": "Chicken Sandwich",
+              "price": 100,
+              "veg": false,
+              "uiGroup": "Sandwiches (Non Veg.)",
+              "station": "sandwich",
+              "sort": 292
+            },
+            {
+              "name": "Chicken Hawaiian Sandwich",
+              "menuLine": "Chicken Hawaiian Sandwich",
+              "price": 110,
+              "veg": false,
+              "uiGroup": "Sandwiches (Non Veg.)",
+              "station": "sandwich",
+              "sort": 293
+            },
+            {
+              "name": "Boiled Eggs Mayonnaise Sandwich",
+              "menuLine": "Boiled Eggs Mayonnaise Sandwich",
+              "price": 90,
+              "veg": false,
+              "uiGroup": "Sandwiches (Non Veg.)",
+              "station": "sandwich",
+              "sort": 294
+            },
+            {
+              "name": "Chicken Tikka Sandwich",
+              "menuLine": "Chicken Tikka Sandwich",
+              "price": 110,
+              "veg": false,
+              "uiGroup": "Sandwiches (Non Veg.)",
+              "station": "sandwich",
+              "sort": 295
+            },
+            {
+              "name": "Egg Omlette Sandwich",
+              "menuLine": "Egg Omlette Sandwich",
+              "price": 90,
+              "veg": false,
+              "uiGroup": "Sandwiches (Non Veg.)",
+              "station": "sandwich",
+              "sort": 296
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

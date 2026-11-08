@@ -1,0 +1,23 @@
+{
+  "statuses": {
+    "/": 200,
+    "/staff": 200,
+    "/waiter": 200,
+    "/kitchen": 200,
+    "/billing": 200,
+    "/admin": 200,
+    "/book": 200,
+    "/account": 200,
+    "/images/hero.webp": 200,
+    "/images/indian.webp": 200,
+    "/images/biryani.webp": 200,
+    "/images/italian.webp": 200,
+    "/images/noodles.webp": 200,
+    "/images/sandwich.webp": 200,
+    "/images/dessert.webp": 200,
+    "/images/drinks.webp": 200,
+    "/_next/image?url=%2Fimages%2Findian.webp&w=640&q=75": 200
+  },
+  "mobileOverflow": false,
+  "pageErrors": []
+}

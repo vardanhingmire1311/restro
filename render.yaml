@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: restro
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: node scripts/start.mjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TZ
+        value: Asia/Kolkata
+      - key: OTP_DEV_REVEAL
+        value: "false"
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: APP_URL
+        sync: false

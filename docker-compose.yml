@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: restro_db
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d restro_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - restro_pg:/var/lib/postgresql/data
+  app:
+    build: .
+    ports:
+      - "3847:3847"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/restro_db
+      JWT_SECRET: dev-only-change-me
+      APP_URL: http://127.0.0.1:3847
+      OTP_DEV_REVEAL: "true"
+      TZ: Asia/Kolkata
+      NODE_ENV: production
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  restro_pg:

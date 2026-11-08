@@ -1,0 +1,11 @@
+{
+  "name": "Restro Waiter",
+  "short_name": "Restro",
+  "start_url": "/waiter",
+  "display": "standalone",
+  "background_color": "#0f0f11",
+  "theme_color": "#0f0f11",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

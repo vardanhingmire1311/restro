@@ -1,0 +1,62 @@
+{
+  "name": "restro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "next build",
+    "start": "node scripts/start.mjs",
+    "migrate": "tsx server/migrate.ts",
+    "seed": "tsx server/seed.ts",
+    "menu:compile": "node scripts/compile-menu.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bwip-js": "^4.11.4",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.3",
+    "lottie-react": "^3.1.2",
+    "lucide-react": "^1.70.0",
+    "next": "15.5.29",
+    "pg": "^8.23.1",
+    "qrcode": "^1.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4",
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/bwip-js": "^3.2.3",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/supertest": "^7.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.29",
+    "supertest": "^7.3.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
