@@ -273,8 +273,18 @@ export async function setItemStatus(actor: Actor, itemId: string, status: "PREPA
   const next = await withTx(async (client) => {
     const item = await one<{ id: string; status: string; name: string; order_id: string }>(client, "SELECT id, status, name, order_id FROM order_items WHERE id = $1 FOR UPDATE", [itemId]);
     if (!item || item.status === "VOID") throw new AppError(404, "not_found", "Kitchen item not found");
-    const flow = ["QUEUED", "PREPARING", "READY"];
-    if (flow.indexOf(status) !== flow.indexOf(item.status) + 1) throw new AppError(400, "status", "Move the dish from queued to cooking, then to ready");
+    if (item.status === status) {
+      const order = await one<{ table_no: number | null; delivery_id: string | null; type: string }>(client, "SELECT table_no, delivery_id, type FROM orders WHERE id = $1", [item.order_id]);
+      return { item, order };
+    }
+    const validTransitions: Record<string, string[]> = {
+      QUEUED: ["PREPARING", "READY"],
+      PREPARING: ["READY"],
+      READY: ["PREPARING"],
+    };
+    if (!validTransitions[item.status]?.includes(status)) {
+      throw new AppError(400, "status", `Cannot change dish status from ${item.status} to ${status}`);
+    }
     await client.query("UPDATE order_items SET status = $2 WHERE id = $1", [itemId, status]);
     const order = await one<{ table_no: number | null; delivery_id: string | null; type: string }>(client, "SELECT table_no, delivery_id, type FROM orders WHERE id = $1", [item.order_id]);
     return { item, order };

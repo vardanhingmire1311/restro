@@ -39,14 +39,37 @@ function Board() {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
+  async function fetchTickets() {
     const token = staffSession()?.token;
-    api<Ticket[]>(`/api/kds${partner ? `?partner=${partner}` : ""}`, { token }).then(setTickets).catch((reason: unknown) => toast.error(reason instanceof Error ? reason.message : "Kitchen board failed"));
+    if (!token) return;
+    try {
+      const next = await api<Ticket[]>(`/api/kds${partner ? `?partner=${partner}` : ""}`, { token });
+      setTickets(next);
+    } catch (reason: unknown) {
+      // quiet retry
+    }
+  }
+
+  useEffect(() => {
+    fetchTickets();
   }, [pulse, partner]);
 
   async function move(id: string, status: "PREPARING" | "READY") {
+    // Optimistic UI update so button and column change instantly
+    setTickets((prev) =>
+      prev.map((ticket) => ({
+        ...ticket,
+        items: ticket.items.map((item) => (item.id === id ? { ...item, status } : item)),
+      }))
+    );
     const token = staffSession()?.token;
-    try { await api(`/api/order-items/${id}/status`, { method: "PATCH", token, body: JSON.stringify({ status }) }); } catch (reason) { toast.error(reason instanceof Error ? reason.message : "Could not update the ticket"); }
+    try {
+      await api(`/api/order-items/${id}/status`, { method: "PATCH", token, body: JSON.stringify({ status }) });
+      await fetchTickets();
+    } catch (reason) {
+      await fetchTickets();
+      toast.error(reason instanceof Error ? reason.message : "Could not update the ticket");
+    }
   }
 
   return (

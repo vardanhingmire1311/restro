@@ -45,5 +45,13 @@ export function LiveProvider({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
+  useEffect(() => {
+    if (connected) return;
+    const timer = setInterval(() => {
+      setPulse((value) => value + 1);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [connected]);
+
   return <LiveContext.Provider value={{ connected, pulse }}>{children}</LiveContext.Provider>;
 }
