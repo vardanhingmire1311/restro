@@ -38,8 +38,13 @@ export function sendError(res: Response, error: unknown) {
     res.status(error.status).json({ ok: false, error: { code: error.code, message: error.message, fields: error.fields } });
     return;
   }
+  const errWithStatus = error as { status?: number; statusCode?: number; message?: string };
+  if (errWithStatus && typeof (errWithStatus.status || errWithStatus.statusCode) === "number") {
+    res.status(errWithStatus.status || errWithStatus.statusCode || 400).json({ ok: false, error: { code: "bad_request", message: errWithStatus.message || "Bad request" } });
+    return;
+  }
   console.error(error);
-  res.status(500).json({ ok: false, error: { code: "internal", message: "Something went wrong. Please try again." } });
+  res.status(500).json({ ok: false, error: { code: "internal", message: error instanceof Error ? error.message : "Something went wrong. Please try again." } });
 }
 
 export function ok(res: Response, data: unknown, status = 200) {

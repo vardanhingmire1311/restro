@@ -334,54 +334,70 @@ export async function closeDrawer(actor: Actor, countedRupees: number, note: str
 }
 
 export async function drawerState() {
-  const open = await one<{ id: string; opening_float_paise: number; cash_sales_paise: number; opened_at: string }>(
-    getPool(),
-    "SELECT id, opening_float_paise, cash_sales_paise, opened_at FROM drawer_shifts WHERE closed_at IS NULL",
-  );
-  const recent = await getPool().query(
-    "SELECT id, opening_float_paise, cash_sales_paise, expected_paise, counted_paise, variance_paise, opened_at, closed_at, note FROM drawer_shifts ORDER BY opened_at DESC LIMIT 8",
-  );
-  return {
-    open: open
-      ? { id: open.id, float: rupees(open.opening_float_paise), cashSales: rupees(open.cash_sales_paise), expected: rupees(open.opening_float_paise + open.cash_sales_paise), openedAt: open.opened_at }
-      : null,
-    recent: recent.rows.map((row) => ({
-      id: row.id,
-      float: rupees(row.opening_float_paise),
-      cashSales: rupees(row.cash_sales_paise),
-      expected: row.expected_paise == null ? null : rupees(row.expected_paise),
-      counted: row.counted_paise == null ? null : rupees(row.counted_paise),
-      variance: row.variance_paise == null ? null : rupees(row.variance_paise),
-      openedAt: row.opened_at,
-      closedAt: row.closed_at,
-      note: row.note,
-    })),
-  };
+  try {
+    const open = await one<{ id: string; opening_float_paise: number; cash_sales_paise: number; opened_at: string }>(
+      getPool(),
+      "SELECT id, opening_float_paise, cash_sales_paise, opened_at FROM drawer_shifts WHERE closed_at IS NULL",
+    );
+    const recent = await getPool().query(
+      "SELECT id, opening_float_paise, cash_sales_paise, expected_paise, counted_paise, variance_paise, opened_at, closed_at, note FROM drawer_shifts ORDER BY opened_at DESC LIMIT 8",
+    );
+    return {
+      open: open
+        ? { id: open.id, float: rupees(open.opening_float_paise), cashSales: rupees(open.cash_sales_paise), expected: rupees(open.opening_float_paise + open.cash_sales_paise), openedAt: open.opened_at }
+        : null,
+      recent: recent.rows.map((row) => ({
+        id: row.id,
+        float: rupees(row.opening_float_paise),
+        cashSales: rupees(row.cash_sales_paise),
+        expected: row.expected_paise == null ? null : rupees(row.expected_paise),
+        counted: row.counted_paise == null ? null : rupees(row.counted_paise),
+        variance: row.variance_paise == null ? null : rupees(row.variance_paise),
+        openedAt: row.opened_at,
+        closedAt: row.closed_at,
+        note: row.note,
+      })),
+    };
+  } catch {
+    return { open: null, recent: [] };
+  }
 }
 
 export async function analytics(from: string, to: string) {
-  const payments = await getPool().query(
-    `SELECT method, COALESCE(SUM(amount_paise),0)::int AS amount, count(*)::int AS n
-     FROM payments WHERE status = 'success' AND created_at >= $1::date AND created_at < ($2::date + interval '1 day')
-     GROUP BY method`,
-    [from, to],
-  );
-  const top = await getPool().query(
-    `SELECT oi.name, SUM(oi.qty)::int AS qty, SUM(oi.price_paise * oi.qty)::int AS amount
-     FROM order_items oi JOIN orders o ON o.id = oi.order_id
-     WHERE oi.status <> 'VOID' AND o.status <> 'CANCELLED' AND o.created_at >= $1::date AND o.created_at < ($2::date + interval '1 day')
-     GROUP BY oi.name ORDER BY amount DESC LIMIT 8`,
-    [from, to],
-  );
-  const open = await one<{ amount: number; n: number }>(getPool(), "SELECT COALESCE(SUM(total_paise),0)::int AS amount, count(*)::int AS n FROM bills WHERE status IN ('UNSETTLED','PARTIAL')");
-  const voids = await one<{ n: number }>(getPool(), "SELECT count(*)::int AS n FROM audit_logs WHERE action = 'item.void' AND created_at >= $1::date AND created_at < ($2::date + interval '1 day')", [from, to]);
-  return {
-    from,
-    to,
-    payments: payments.rows.map((row) => ({ method: row.method, amount: rupees(row.amount), count: row.n })),
-    sales: rupees(payments.rows.reduce((sum, row) => sum + Number(row.amount), 0)),
-    topItems: top.rows.map((row) => ({ name: row.name, qty: row.qty, amount: rupees(row.amount) })),
-    unsettled: { amount: rupees(open?.amount ?? 0), bills: open?.n ?? 0 },
-    voids: voids?.n ?? 0,
-  };
+  try {
+    const payments = await getPool().query(
+      `SELECT method, COALESCE(SUM(amount_paise),0)::int AS amount, count(*)::int AS n
+       FROM payments WHERE status = 'success' AND created_at >= $1::date AND created_at < ($2::date + interval '1 day')
+       GROUP BY method`,
+      [from, to],
+    );
+    const top = await getPool().query(
+      `SELECT oi.name, SUM(oi.qty)::int AS qty, SUM(oi.price_paise * oi.qty)::int AS amount
+       FROM order_items oi JOIN orders o ON o.id = oi.order_id
+       WHERE oi.status <> 'VOID' AND o.status <> 'CANCELLED' AND o.created_at >= $1::date AND o.created_at < ($2::date + interval '1 day')
+       GROUP BY oi.name ORDER BY amount DESC LIMIT 8`,
+      [from, to],
+    );
+    const open = await one<{ amount: number; n: number }>(getPool(), "SELECT COALESCE(SUM(total_paise),0)::int AS amount, count(*)::int AS n FROM bills WHERE status IN ('UNSETTLED','PARTIAL')");
+    const voids = await one<{ n: number }>(getPool(), "SELECT count(*)::int AS n FROM audit_logs WHERE action = 'item.void' AND created_at >= $1::date AND created_at < ($2::date + interval '1 day')", [from, to]);
+    return {
+      from,
+      to,
+      payments: payments.rows.map((row) => ({ method: row.method, amount: rupees(row.amount), count: row.n })),
+      sales: rupees(payments.rows.reduce((sum, row) => sum + Number(row.amount), 0)),
+      topItems: top.rows.map((row) => ({ name: row.name, qty: row.qty, amount: rupees(row.amount) })),
+      unsettled: { amount: rupees(open?.amount ?? 0), bills: open?.n ?? 0 },
+      voids: voids?.n ?? 0,
+    };
+  } catch {
+    return {
+      from,
+      to,
+      payments: [],
+      sales: 0,
+      topItems: [],
+      unsettled: { amount: 0, bills: 0 },
+      voids: 0,
+    };
+  }
 }

@@ -6,13 +6,15 @@ function connectionConfig(connectionString: string) {
   const url = new URL(connectionString);
   const sslmode = url.searchParams.get("sslmode");
   if (sslmode) url.searchParams.delete("sslmode");
-  const tz = process.env.TZ || "Asia/Kolkata";
+  const rawTz = process.env.TZ || "Asia/Kolkata";
+  const tz = rawTz.replace(/^:/, "");
   if (!/^[\w/+-]+$/.test(tz)) throw new Error("Invalid TZ");
   return {
     connectionString: url.toString(),
     ssl: sslmode && sslmode !== "disable" ? { rejectUnauthorized: process.env.PGSSL_REJECT_UNAUTHORIZED === "true" } : undefined,
     options: `-c timezone=${tz}`,
     max: 10,
+    connectionTimeoutMillis: 3000,
   };
 }
 
