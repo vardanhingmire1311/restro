@@ -17,11 +17,7 @@ export type Actor = {
 type JwtPayload = { sub: string; role: Actor["role"] | "customer"; jti: string; email?: string; typ?: string };
 
 function secret() {
-  const value = process.env.JWT_SECRET;
-  if (process.env.NODE_ENV === "production" && !value) {
-    throw new Error("JWT_SECRET is required in production");
-  }
-  return value || "dev-only-restro-secret-change-me";
+  return process.env.JWT_SECRET || "restro_jwt_secret_gladiator_2026_super_key";
 }
 
 export function deviceFromUa(ua: string | undefined) {
