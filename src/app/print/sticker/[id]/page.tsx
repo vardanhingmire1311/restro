@@ -28,12 +28,13 @@ export default function StickerPage() {
   const [sticker, setSticker] = useState<Sticker | null>(null);
 
   useEffect(() => {
+    if (!params?.id) return;
     const token = staffSession()?.token;
     api<Sticker>(`/api/billing/orders/${params.id}/sticker`, { token }).then((next) => {
       setSticker(next);
       setTimeout(() => window.print(), 400);
     }).catch(() => undefined);
-  }, [params.id]);
+  }, [params?.id]);
 
   if (!sticker) return <main className="p-6">Preparing the sticker…</main>;
   return (

@@ -18,11 +18,12 @@ export default function RazorpayPage() {
   const [session, setSession] = useState<Session | null>(null);
 
   useEffect(() => {
+    if (!params?.id) return;
     api<Session>(`/api/payments/sessions/${params.id}`).then(setSession).catch(() => toast.error("Razorpay session missing"));
     const script = document.createElement("script");
     script.src = "https://checkout.razorpay.com/v1/checkout.js";
     document.body.appendChild(script);
-  }, [params.id]);
+  }, [params?.id]);
 
   function open() {
     if (!session?.keyId || !session.providerRef || !window.Razorpay) {
@@ -36,7 +37,7 @@ export default function RazorpayPage() {
       name: session.restaurant,
       order_id: session.providerRef,
       handler: async (response: { razorpay_order_id: string; razorpay_payment_id: string; razorpay_signature: string }) => {
-        await api("/api/payments/razorpay/verify", { method: "POST", body: JSON.stringify({ sessionId: params.id, ...response }) });
+        await api("/api/payments/razorpay/verify", { method: "POST", body: JSON.stringify({ sessionId: params?.id, ...response }) });
         toast.success("Razorpay confirmed the payment");
       },
     });

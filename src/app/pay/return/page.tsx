@@ -9,8 +9,8 @@ function ReturnBody() {
   const [message, setMessage] = useState("Checking the payment…");
 
   useEffect(() => {
-    const gateway = params.get("gateway");
-    const sessionId = params.get("session_id") || params.get("session");
+    const gateway = params?.get("gateway");
+    const sessionId = params?.get("session_id") || params?.get("session");
     const run = async () => {
       try {
         if (gateway === "stripe" && sessionId) await api("/api/payments/stripe/confirm", { method: "POST", body: JSON.stringify({ sessionId }) });

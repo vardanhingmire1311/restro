@@ -11,12 +11,13 @@ export default function PrintBillPage() {
   const [bill, setBill] = useState<Bill | null>(null);
 
   useEffect(() => {
+    if (!params?.id) return;
     const token = staffSession()?.token;
     api<Bill>(`/api/orders/${params.id}`, { token }).then((next) => {
       setBill(next);
       setTimeout(() => window.print(), 300);
     }).catch(() => undefined);
-  }, [params.id]);
+  }, [params?.id]);
 
   if (!bill) return <main className="p-6">Preparing the bill…</main>;
   return (

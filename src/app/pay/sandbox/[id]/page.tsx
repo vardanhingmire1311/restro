@@ -14,11 +14,13 @@ export default function SandboxPage() {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
+    if (!params?.id) return;
     api<{ amount: number; restaurant: string }>(`/api/payments/sessions/${params.id}`).then((session) => setAmount(session.amount)).catch(() => toast.error("Session not found"));
-  }, [params.id]);
+  }, [params?.id]);
 
   async function pay(event: React.FormEvent) {
     event.preventDefault();
+    if (!params?.id) return;
     try {
       await api("/api/payments/mock/charge", { method: "POST", body: JSON.stringify({ sessionId: params.id, number, expiry, name }) });
       setDone(true);

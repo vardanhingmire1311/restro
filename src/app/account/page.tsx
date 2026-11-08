@@ -20,16 +20,16 @@ function AccountForm() {
 
   useEffect(() => {
     api<{ google: boolean }>("/api/public/config").then((config) => setGoogle(config.google)).catch(() => undefined);
-    const token = params.get("token");
-    if (params.get("google") === "ok" && token) {
+    const token = params?.get("token");
+    if (params?.get("google") === "ok" && token) {
       api<{ id: string; name: string; mobile: string | null }>("/api/customer/me", { token }).then((customer) => {
         saveGuest(token, customer);
         toast.success(`Signed in as ${customer.name}`);
         router.replace("/book");
       }).catch(() => toast.error("Google sign-in did not finish"));
     }
-    if (params.get("google") === "missing") toast.error("Google Sign-In needs a client id and secret");
-    if (params.get("google") === "failed") toast.error("Google did not return a profile");
+    if (params?.get("google") === "missing") toast.error("Google Sign-In needs a client id and secret");
+    if (params?.get("google") === "failed") toast.error("Google did not return a profile");
   }, [params, router]);
 
   async function requestCode() {
@@ -51,7 +51,7 @@ function AccountForm() {
       });
       saveGuest(result.token, result.customer);
       toast.success("You are signed in");
-      router.push(params.get("next") || "/book");
+      router.push(params?.get("next") || "/book");
     } catch (reason) {
       toast.error(reason instanceof ApiError ? reason.message : "Code not accepted");
     }

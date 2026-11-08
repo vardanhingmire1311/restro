@@ -33,7 +33,7 @@ function LoginForm() {
       <section className="login-form-section flex items-center justify-center px-6 py-10">
         <form onSubmit={submit} className="glass w-full max-w-md rounded-3xl p-6">
           <p className="eyebrow"><ShieldCheck size={15} className="inline" /> Staff access</p><h1 className="display mt-3 text-4xl">Welcome back.</h1><p className="mt-2 text-sm text-[#b7b1a8]">A great service starts with you.</p>
-          {params.get("reason") === "revoked" ? <p className="mt-2 text-sm text-red-300">This session was revoked.</p> : null}
+          {params?.get("reason") === "revoked" ? <p className="mt-2 text-sm text-red-300">This session was revoked.</p> : null}
           <label className="mt-4 block text-sm">Email
             <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} className="mt-1 w-full rounded-xl border border-white/10 bg-black/30 px-3 py-3" required />
           </label>
